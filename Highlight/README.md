@@ -1,3 +1,5 @@
+<img width="945" height="798" alt="image" src="https://github.com/user-attachments/assets/aa99510f-0948-4cc6-9a74-0fe1711afaec" />
+
 # Highlight — 陷阱 / 敌对生物高亮
 
 《Casualties: Unknown / 未知伤亡》BepInEx 5 插件：把玩家附近的**危险陷阱标红**、**敌对生物标黄**，红色/黄色描边 + 脉冲色层，可穿墙、穿黑暗显示（可关）。

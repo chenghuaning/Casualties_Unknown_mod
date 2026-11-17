@@ -1,0 +1,11 @@
+# Audio assets — keep local, never commit
+# 版权音频/音效只保留在本地，不进入 Git 提交
+*.mp3
+*.wav
+*.ogg
+*.m4a
+*.flac
+*.aac
+*.wma
+*.aiff
+*.opus

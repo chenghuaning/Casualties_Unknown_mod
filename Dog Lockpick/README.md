@@ -1,35 +1,30 @@
-# Dog Lockpick — 开锁大狗叫音效
+# Dog Lockpick
 
-- 版本：1.0.0
-- 适用：Casualties: Unknown（Unity Mono / BepInEx 5.4.x x64）
-- GUID：`com.lead.doglocpick`
+《Casualties: Unknown / 未知伤亡》开锁时播放「大狗」音效的插件。
+
+## 功能
+
+- 只有按住开锁键时才循环播放「大狗」，打开界面不播放。
+- 随开锁进度/时间推移，音调与音量逐渐升高、速度变快。
+- 松开开锁键立即停止。
+- 开锁成功时停止循环，播放一次 3 倍时长拉伸的「叫！」。
+- 成功音继承循环最后的音调，不会突然降调。
+- 音频已内嵌进 DLL，单文件安装。
+
+## 安装
+
+1. 安装 BepInEx 5.4.x（x64, Mono）。
+2. 把 `DogLockpick.dll` 放到：
+   `BepInEx\plugins\DogLockpick\DogLockpick.dll`
+3. 使用时请禁用 Auto Unlock，否则开锁会瞬间完成。
+4. 启动游戏，按住开锁键。
 
 ## 配置
 
 `BepInEx\config\com.lead.doglocpick.cfg`
 
-| 配置项 | 默认值 | 说明 |
-| --- | --- | --- |
-| `Enabled` | `true` | 总开关 |
-| `Loop Volume` | `0.8` | 循环音量基数 |
-| `Max Pitch` | `2.2` | 开锁末尾的播放速度/音调（1–4） |
-| `Success Volume` | `1.0` | 成功「叫！」音量 |
-| `Verbose Log` | `true` | 记录循环开始/音调/成功 |
-
----
-
-## 安装
-
-1. 安装 BepInEx 5。
-2. 把 `DogLockpick.dll` 放到：
-   ```
-   BepInEx\plugins\DogLockpick\DogLockpick.dll
-   ```
-3. 启动游戏，按住开锁键即可听到。
-
----
-
-## 文件
-
-- `DogLockpick.dll`
-- `README.md`
+- `Enabled`
+- `Loop Volume`（默认 0.8）
+- `Max Pitch`（默认 2.2）
+- `Success Volume`（默认 1.0）
+- `Verbose Log`

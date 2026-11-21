@@ -1,0 +1,6892 @@
+{
+ "alienblood": {
+  "id": "alienblood",
+  "localeName": "alienblood",
+  "locales": {
+   "EN": {
+    "name": "Alien blood"
+   },
+   "zh-CN": {
+    "name": "异种血液"
+   }
+  },
+  "appearance": {
+   "color": "#FFEB12"
+  },
+  "economy": {
+   "valuePerLiter": 20
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "blood": 0.8
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 30,
+     "requiredInt": 2,
+     "category": "medicine",
+     "amountMl": 50,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "bloodsac"
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.026667,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.08,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.009333,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "bloodVolume": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.034667,
+      "valueMode": "scaled"
+     },
+     "septicShock": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.013333,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.026667,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 16
+   }
+  }
+ },
+ "antidepressants": {
+  "id": "antidepressants",
+  "localeName": "antidepressants",
+  "locales": {
+   "EN": {
+    "name": "Antidepressants"
+   },
+   "zh-CN": {
+    "name": "抗抑郁药"
+   }
+  },
+  "appearance": {
+   "color": "#64A185"
+  },
+  "economy": {
+   "valuePerLiter": 120
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "antidepressants",
+     "amountMl": 140
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 87,
+     "requiredInt": 10,
+     "category": "medicine",
+     "amountMl": 200,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "soothingcrystalshard"
+      },
+      {
+       "minimumCondition": 20,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "flammablepowder"
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "Antidepressants": {
+      "type": "instant",
+      "action": "add",
+      "value": 5,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     }
+    },
+    "sound": [
+     "pills"
+    ]
+   }
+  },
+  "assets": {
+   "sounds": [
+    "assets/sounds/Liquids_pills.ogg"
+   ]
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 17
+   }
+  }
+ },
+ "antivenom": {
+  "id": "antivenom",
+  "localeName": "antivenom",
+  "locales": {
+   "EN": {
+    "name": "Antivenom"
+   },
+   "zh-CN": {
+    "name": "抗毒血清"
+   }
+  },
+  "appearance": {
+   "color": "#4DFF70"
+  },
+  "economy": {
+   "valuePerLiter": 130
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 32,
+     "requiredInt": 10,
+     "category": "medicine",
+     "amountMl": 50,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "venomgland"
+      },
+      {
+       "minimumCondition": 5,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "blood",
+        "amount": 25
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "disinfectant",
+        "amount": 10
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.24,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "venomTotal": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 1.2,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 18
+   }
+  }
+ },
+ "antibiotics": {
+  "id": "antibiotics",
+  "localeName": "antibiotics",
+  "locales": {
+   "EN": {
+    "name": "Antibiotics"
+   },
+   "zh-CN": {
+    "name": "抗生素"
+   }
+  },
+  "appearance": {
+   "color": "#9E5DEC"
+  },
+  "economy": {
+   "valuePerLiter": 180
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.5
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "antibiotics",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "septicShock": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.25,
+      "valueMode": "scaled"
+     },
+     "antibioticImmunityTime": {
+      "type": "instant",
+      "action": "add",
+      "value": 25,
+      "valueMode": "scaled"
+     }
+    },
+    "sound": [
+     "pills"
+    ]
+   }
+  },
+  "assets": {
+   "sounds": [
+    "assets/sounds/Liquids_pills.ogg"
+   ]
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 19
+   }
+  }
+ },
+ "antiserum": {
+  "id": "antiserum",
+  "localeName": "antiserum",
+  "locales": {
+   "EN": {
+    "name": "Antiserum"
+   },
+   "zh-CN": {
+    "name": "抗血清"
+   }
+  },
+  "appearance": {
+   "color": "#753E5D"
+  },
+  "economy": {
+   "valuePerLiter": 160
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "antiserum",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "antibioticImmunityTime": {
+      "type": "instant",
+      "action": "add",
+      "value": 1,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.3,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "septicShock": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.2,
+      "valueMode": "scaled"
+     },
+     "bloodVolume": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.06,
+      "valueMode": "scaled"
+     },
+     "antibioticImmunityTime": {
+      "type": "instant",
+      "action": "add",
+      "value": 6,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.02f;\n\t\t\t\tlimb.body.septicShock -= 10f * num;\n\t\t\t\tlimb.body.bloodVolume += 3f * num;\n\t\t\t\tlimb.body.antibioticImmunityTime += 300f * num;\n\t\t\t\tlimb.SetDisinfect(180f * Mathf.Clamp01(num));\n\t\t\t\tLimb[] connectedLimbs = limb.connectedLimbs;\n\t\t\t\tfor (int i = 0; i < connectedLimbs.Length; i++)\n\t\t\t\t{\n\t\t\t\t\tconnectedLimbs[i].SetDisinfect(150f * Mathf.Clamp01(num));\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 20
+   }
+  }
+ },
+ "antirad": {
+  "id": "antirad",
+  "localeName": "antirad",
+  "locales": {
+   "EN": {
+    "name": "Anti-rad"
+   },
+   "zh-CN": {
+    "name": "抗辐射药"
+   }
+  },
+  "appearance": {
+   "color": "#FBC106"
+  },
+  "economy": {
+   "valuePerLiter": 120
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "antirad",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "radiationSickness": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.2,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 4.5,
+       "durationMode": "scaled"
+      }
+     }
+    },
+    "sound": [
+     "pills"
+    ]
+   }
+  },
+  "assets": {
+   "sounds": [
+    "assets/sounds/Liquids_pills.ogg"
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 20f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"antirad\", () =>\n\t\t\t\t{\n\t\t\t\t\tbody.radiationSickness -= 0.2f;\n\t\t\t\t\tif (CoUtils.instance.DurationOf(\"antirad\") > 180f)\n\t\t\t\t\t{\n\t\t\t\t\t\tbody.sicknessAmount += 0.6f;\n\t\t\t\t\t\tbody.limbs[1].pain += 1.5f;\n\t\t\t\t\t\tbody.overdoseIndex = 3;\n\t\t\t\t\t}\n\t\t\t\t}, 90f * num);\n\t\t\t\tSound.Play(\"pills\", body.transform.position);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 21
+   }
+  }
+ },
+ "biochem": {
+  "id": "biochem",
+  "localeName": "biochem",
+  "locales": {
+   "EN": {
+    "name": "Bio-chem fluid"
+   },
+   "zh-CN": {
+    "name": "生化流体"
+   }
+  },
+  "appearance": {
+   "color": "#B3FF25"
+  },
+  "economy": {
+   "valuePerLiter": 45
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 2
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 7,
+     "requiredInt": 4,
+     "category": "materials",
+     "amountMl": 10,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "glowplantfruit"
+      }
+     ]
+    },
+    {
+     "type": "recipe",
+     "recipe": 8,
+     "requiredInt": 12,
+     "category": "materials",
+     "amountMl": 25,
+     "ingredients": [
+      {
+       "minimumCondition": 250,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "lumalgae"
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": false,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "heatsource",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.4,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.1,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    },
+    "Head": {
+     "pain": {
+      "type": "periodic",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 10
+      }
+     },
+     "muscleHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.025,
+      "valueMode": "scaled",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 10
+      }
+     }
+    },
+    "UpTorso": {
+     "pain": {
+      "type": "periodic",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 10
+      }
+     },
+     "muscleHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.03,
+      "valueMode": "scaled",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 10
+      }
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 1,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat hundredML = ml * 0.01f;\n\t\t\t\tbody.sicknessAmount += hundredML * 40f;\n\t\t\t\tbody.happiness -= hundredML * 10f;\n\t\t\t\tbody.talker.EatBad();\n\t\t\t\tCoUtils.instance.DoTimedOp(\"biochem\", () =>\n\t\t\t\t{\n\t\t\t\t\tbody.limbs[0].pain += hundredML * 5f;\n\t\t\t\t\tbody.limbs[1].pain += hundredML * 5f;\n\t\t\t\t\tbody.limbs[0].muscleHealth -= hundredML * 2.5f;\n\t\t\t\t\tbody.limbs[1].muscleHealth -= hundredML * 3f;\n\t\t\t\t}, 10f);\n\t\t\t\tbody.limbs[0].SetDisinfect(Mathf.Clamp01(hundredML) * 200f);\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.01f;\n\t\t\t\tlimb.SetDisinfect(num * 30f);\n\t\t\t\tlimb.body.sicknessAmount += num * 100f;\n\t\t\t\tLimb[] limbs = limb.body.limbs;\n\t\t\t\tforeach (Limb obj in limbs)\n\t\t\t\t{\n\t\t\t\t\tobj.muscleHealth -= num * 10f;\n\t\t\t\t\tobj.pain += num * 40f;\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 42
+   }
+  }
+ },
+ "amiodarone": {
+  "id": "amiodarone",
+  "localeName": "amiodarone",
+  "locales": {
+   "EN": {
+    "name": "Amiodarone"
+   },
+   "zh-CN": {
+    "name": "胺碘酮"
+   }
+  },
+  "appearance": {
+   "color": "#FFDCD4"
+  },
+  "economy": {
+   "valuePerLiter": 185
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "amiodarone",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "Head": {
+     "muscleHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.25,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3,
+       "durationMode": "scaled"
+      }
+     }
+    },
+    "UpTorso": {
+     "muscleHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.25,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3,
+       "durationMode": "scaled"
+      }
+     }
+    },
+    "DownTorso": {
+     "muscleHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.25,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3,
+       "durationMode": "scaled"
+      }
+     }
+    },
+    "body": {
+     "fibrillationProgress": "心颤进度大于 0 时，每秒向 0 降低最多 2，不会降到 0 以下；持续时间随用量增加（每毫升 3 秒）。"
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 20f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"amiodarone\", () =>\n\t\t\t\t{\n\t\t\t\t\tif (limb.body.fibrillationProgress > 0f)\n\t\t\t\t\t{\n\t\t\t\t\t\tlimb.body.fibrillationProgress = Mathf.MoveTowards(limb.body.fibrillationProgress, 0f, 2f);\n\t\t\t\t\t}\n\t\t\t\t\tlimb.body.limbs[0].muscleHealth -= 0.25f;\n\t\t\t\t\tlimb.body.limbs[1].muscleHealth -= 0.25f;\n\t\t\t\t\tlimb.body.limbs[2].muscleHealth -= 0.25f;\n\t\t\t\t}, 60f * num);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 55
+   }
+  }
+ },
+ "applejuice": {
+  "id": "applejuice",
+  "localeName": "applejuice",
+  "locales": {
+   "EN": {
+    "name": "Apple juice"
+   },
+   "zh-CN": {
+    "name": "苹果汁"
+   }
+  },
+  "appearance": {
+   "color": "#C5FF61"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.4
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "applejuice",
+     "amountMl": 800
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.001,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.003,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "talk": "Good"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 59
+   }
+  }
+ },
+ "alcohol": {
+  "id": "alcohol",
+  "localeName": "alcohol",
+  "locales": {
+   "EN": {
+    "name": "Alcohol"
+   },
+   "zh-CN": {
+    "name": "酒精"
+   }
+  },
+  "appearance": {
+   "color": "#76E667"
+  },
+  "economy": {
+   "valuePerLiter": 12
+  },
+  "properties": {
+   "healthUsable": true,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.75
+  },
+  "qualities": {
+   "disinfectant": 0.4,
+   "water": 0.7
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "alcohol",
+     "amountMl": 400
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.075,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.07,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "targetLimb": {
+     "pain": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.01f;\n\t\t\t\tlimb.pain += 10f * num;\n\t\t\t\tlimb.SetDisinfect(350f * Mathf.Clamp01(num));\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 69
+   }
+  }
+ },
+ "coffee": {
+  "id": "coffee",
+  "localeName": "coffee",
+  "locales": {
+   "EN": {
+    "name": "Coffee"
+   },
+   "zh-CN": {
+    "name": "咖啡"
+   }
+  },
+  "appearance": {
+   "color": "#50321E"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.7
+  },
+  "qualities": {
+   "water": 0.3
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "coffee",
+     "amountMl": 250
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.12,
+      "valueMode": "scaled"
+     },
+     "stamina": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.25,
+      "valueMode": "scaled"
+     },
+     "energy": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.15,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.15,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.025,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.001,
+      "valueMode": "scaled"
+     },
+     "talk": "Good",
+     "caffeinated": {
+      "type": "instant",
+      "action": "add",
+      "value": 3.5,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 8
+   }
+  }
+ },
+ "braingrow": {
+  "id": "braingrow",
+  "localeName": "braingrow",
+  "locales": {
+   "EN": {
+    "name": "Braingrow"
+   },
+   "zh-CN": {
+    "name": "增脑剂"
+   }
+  },
+  "appearance": {
+   "color": "#C0535E"
+  },
+  "economy": {
+   "valuePerLiter": 500
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "braingrow",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 1,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad",
+     "bodyEffect": "有概率调用呕吐流程，每毫升对应 2.5% 的判定阈值（20 mL 对应 50%）；概率最高为 100%。"
+    },
+    "sound": [
+     "pills"
+    ]
+   }
+  },
+  "assets": {
+   "sounds": [
+    "assets/sounds/Liquids_pills.ogg"
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat twentyML = ml * 0.05f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"braingrow\", () =>\n\t\t\t\t{\n\t\t\t\t\tif (body.alive)\n\t\t\t\t\t{\n\t\t\t\t\t\tbody.brainHealth += 0.1f * twentyML;\n\t\t\t\t\t\tbody.strokeAmount -= 1.5f;\n\t\t\t\t\t}\n\t\t\t\t}, 100f);\n\t\t\t\tbody.sicknessAmount += twentyML * 20f;\n\t\t\t\tbody.talker.EatBad();\n\t\t\t\tSound.Play(\"pills\", body.transform.position);\n\t\t\t\tif (body.brainGrowSickness > 0f || ml > 40f)\n\t\t\t\t{\n\t\t\t\t\tbody.shock = twentyML * 10f;\n\t\t\t\t\tbody.Ragdoll();\n\t\t\t\t\tif (!body.GetComponent<MindwipeScript>())\n\t\t\t\t\t{\n\t\t\t\t\t\tbody.gameObject.AddComponent<MindwipeScript>();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tbody.brainGrowSickness = twentyML * 60f * 20f;\n\t\t\t\tif (Random.Range(0f, 1f) < twentyML * 0.5f)\n\t\t\t\t{\n\t\t\t\t\tbody.vomiter.Vomit();\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 10
+   }
+  }
+ },
+ "ceftriaxone": {
+  "id": "ceftriaxone",
+  "localeName": "ceftriaxone",
+  "locales": {
+   "EN": {
+    "name": "Ceftriaxone"
+   },
+   "zh-CN": {
+    "name": "头孢曲松"
+   }
+  },
+  "appearance": {
+   "color": "#46CF30"
+  },
+  "economy": {
+   "valuePerLiter": 170
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "disinfectant": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "ceftriaxone",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onHealthUse": {
+    "body": {
+     "antibioticImmunityTime": {
+      "type": "instant",
+      "action": "add",
+      "value": 11.25,
+      "valueMode": "scaled"
+     }
+    },
+    "targetLimb": {
+     "pain": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.8,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 11
+   }
+  }
+ },
+ "chocolatemilk": {
+  "id": "chocolatemilk",
+  "localeName": "chocolatemilk",
+  "locales": {
+   "EN": {
+    "name": "Chocolate milk"
+   },
+   "zh-CN": {
+    "name": "巧克力牛奶"
+   }
+  },
+  "appearance": {
+   "color": "#8F5C37"
+  },
+  "economy": {
+   "valuePerLiter": 10
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {
+   "water": 0.5
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "chocolatemilk",
+     "amountMl": 1000
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.025,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.003,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "talk": "Good",
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.12,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 15
+   }
+  }
+ },
+ "chloroform": {
+  "id": "chloroform",
+  "localeName": "chloroform",
+  "locales": {
+   "EN": {
+    "name": "Chloroform"
+   },
+   "zh-CN": {
+    "name": "氯仿"
+   }
+  },
+  "appearance": {
+   "color": "#BAD1A7"
+  },
+  "economy": {
+   "valuePerLiter": 12
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.01f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"chloroform\", () =>\n\t\t\t\t{\n\t\t\t\t\tbody.consciousness = Mathf.MoveTowards(body.consciousness, 0f, 8f);\n\t\t\t\t}, 180f * num);\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.01f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"chloroform\", () =>\n\t\t\t\t{\n\t\t\t\t\tlimb.body.consciousness = Mathf.MoveTowards(limb.body.consciousness, 0f, 8f);\n\t\t\t\t}, 180f * num);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 31
+   }
+  }
+ },
+ "dirtywater": {
+  "id": "dirtywater",
+  "localeName": "dirtywater",
+  "locales": {
+   "EN": {
+    "name": "Dirty water"
+   },
+   "zh-CN": {
+    "name": "污水"
+   }
+  },
+  "appearance": {
+   "color": "#997E43"
+  },
+  "economy": {
+   "valuePerLiter": 0
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 2
+  },
+  "qualities": {
+   "water": 0.2
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "worldFluid",
+     "worldFluidId": "dirtywater",
+     "amountMl": 200
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.06,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.001f;\n\t\t\t\tbool num2 = body.HoldingItem(body.handSlot) && body.GetItem(body.handSlot).id == \"filterstraw\";\n\t\t\t\tbody.Drink(60f * num);\n\t\t\t\tbody.temperature -= num * 2.5f;\n\t\t\t\tif (!num2)\n\t\t\t\t{\n\t\t\t\t\tbody.sicknessAmount += Random.Range(60f, 80f) * num;\n\t\t\t\t\tbody.talker.EatMediocre();\n\t\t\t\t\tbody.happiness--;\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 33
+   }
+  }
+ },
+ "bleach": {
+  "id": "bleach",
+  "localeName": "bleach",
+  "locales": {
+   "EN": {
+    "name": "Bleach"
+   },
+   "zh-CN": {
+    "name": "漂白剂"
+   }
+  },
+  "appearance": {
+   "color": "#FFFFFF"
+  },
+  "economy": {
+   "valuePerLiter": 6
+  },
+  "properties": {
+   "healthUsable": true,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 5
+  },
+  "qualities": {
+   "disinfectant": 0.8
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "bleach",
+     "amountMl": 1500
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": "每毫升立即补水 0.07；同时每秒减水 0.2，持续时间随饮用量增加（每毫升 3 秒）。",
+     "talk": "Bad",
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "periodic",
+      "action": "add",
+      "value": 0.3,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3,
+       "durationMode": "scaled"
+      }
+     }
+    },
+    "Head": {
+     "skinHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.1,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3,
+       "durationMode": "scaled"
+      }
+     }
+    },
+    "UpTorso": {
+     "muscleHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.225,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3,
+       "durationMode": "scaled"
+      }
+     }
+    }
+   },
+   "onHealthUse": {
+    "targetLimb": {
+     "pain": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.25,
+      "valueMode": "scaled"
+     },
+     "muscleHealth": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.15,
+      "valueMode": "scaled"
+     },
+     "skinHealAmount": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.2,
+      "valueMode": "scaled"
+     },
+     "infectionAmount": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.05,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.01f;\n\t\t\t\tbody.Drink(num * 7f);\n\t\t\t\tbody.talker.EatBad();\n\t\t\t\tbody.happiness -= num * 5f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"bleach\", () =>\n\t\t\t\t{\n\t\t\t\t\tbody.thirst -= 0.2f;\n\t\t\t\t\tbody.limbs[0].skinHealth -= 0.1f;\n\t\t\t\t\tbody.limbs[1].muscleHealth -= 0.225f;\n\t\t\t\t\tif (body.limbs[1].pain < 50f)\n\t\t\t\t\t{\n\t\t\t\t\t\tbody.limbs[1].pain += 1.5f;\n\t\t\t\t\t}\n\t\t\t\t\tbody.sicknessAmount += 0.3f;\n\t\t\t\t}, 300f * num);\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.01f;\n\t\t\t\tlimb.pain += 25f * num;\n\t\t\t\tlimb.muscleHealth -= 15f * num;\n\t\t\t\tlimb.skinHealAmount -= 20f * num;\n\t\t\t\tlimb.infectionAmount -= 5f * num;\n\t\t\t\tlimb.SetDisinfect(400f * Mathf.Clamp01(num));\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 38
+   }
+  }
+ },
+ "carbonatedwater": {
+  "id": "carbonatedwater",
+  "localeName": "carbonatedwater",
+  "locales": {
+   "EN": {
+    "name": "Carbonated water"
+   },
+   "zh-CN": {
+    "name": "碳酸水"
+   }
+  },
+  "appearance": {
+   "color": "#66A6FF"
+  },
+  "economy": {
+   "valuePerLiter": 17
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "water": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "bodyEffect": [
+      "burp"
+     ],
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.008,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 46
+   }
+  }
+ },
+ "blood": {
+  "id": "blood",
+  "localeName": "blood",
+  "locales": {
+   "EN": {
+    "name": "Blood"
+   },
+   "zh-CN": {
+    "name": "血液"
+   }
+  },
+  "appearance": {
+   "color": "#FFC900"
+  },
+  "economy": {
+   "valuePerLiter": 20
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "blood": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "bloodbag",
+     "amountMl": 750
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 33,
+     "requiredInt": 8,
+     "category": "medicine",
+     "amountMl": 100,
+     "ingredients": [
+      {
+       "minimumCondition": 99.99,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "alienblood"
+      },
+      {
+       "minimumCondition": 10,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 40
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.026667,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.08,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.009333,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "bloodVolume": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 61
+   }
+  }
+ },
+ "cereal": {
+  "id": "cereal",
+  "localeName": "cereal",
+  "locales": {
+   "EN": {
+    "name": "Cereal mix"
+   },
+   "zh-CN": {
+    "name": "谷物粥"
+   }
+  },
+  "appearance": {
+   "color": "#FFDB9C"
+  },
+  "economy": {
+   "valuePerLiter": 20
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.9
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "bowlofcereal",
+     "amountMl": 500
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.075,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.06,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.004,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.015,
+      "valueMode": "scaled"
+     },
+     "talk": "Good"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 64
+   }
+  }
+ },
+ "icecream": {
+  "id": "icecream",
+  "localeName": "icecream",
+  "locales": {
+   "EN": {
+    "name": "Ice cream"
+   },
+   "zh-CN": {
+    "name": "冰激凌"
+   }
+  },
+  "appearance": {
+   "color": "#EDFFBD"
+  },
+  "economy": {
+   "valuePerLiter": 26
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {
+   "water": 0.5
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.06,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.06,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.012,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.015,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.015,
+      "valueMode": "scaled"
+     },
+     "talk": "Good",
+     "temperature": "持续 15 秒，每秒检查体温，高于 28.5°C 时降低 0.2°C；单次变化可能使体温低于 28.5°C。"
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 100f;\n\t\t\t\tbody.Drink(6f * num);\n\t\t\t\tbody.Eat(6f * num, 1.2f * num, 0);\n\t\t\t\tbody.sicknessAmount += 1.5f * num;\n\t\t\t\tbody.happiness += 1.5f * num;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"icecream\", () =>\n\t\t\t\t{\n\t\t\t\t\tif (body.temperature > 28.5f)\n\t\t\t\t\t{\n\t\t\t\t\t\tbody.temperature -= 0.2f;\n\t\t\t\t\t}\n\t\t\t\t}, 15f);\n\t\t\t\tbody.talker.EatGood();\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 3
+   }
+  }
+ },
+ "highgradestimulant": {
+  "id": "highgradestimulant",
+  "localeName": "highgradestimulant",
+  "locales": {
+   "EN": {
+    "name": "Medical-grade stimulant"
+   },
+   "zh-CN": {
+    "name": "医用级兴奋剂"
+   }
+  },
+  "appearance": {
+   "color": "#FFFFFF"
+  },
+  "economy": {
+   "valuePerLiter": 32
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "combatpen",
+     "amountMl": 60
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 100f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"highgradestimulant\", () =>\n\t\t\t\t{\n\t\t\t\t\tHighGradeStimulantStep(body.limbs[0]);\n\t\t\t\t}, num * 200f);\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 100f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"highgradestimulant\", () =>\n\t\t\t\t{\n\t\t\t\t\tHighGradeStimulantStep(limb);\n\t\t\t\t}, num * 240f);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 5
+   }
+  }
+ },
+ "groundwater": {
+  "id": "groundwater",
+  "localeName": "groundwater",
+  "locales": {
+   "EN": {
+    "name": "Groundwater"
+   },
+   "zh-CN": {
+    "name": "地下水"
+   }
+  },
+  "appearance": {
+   "color": "#598AD4"
+  },
+  "economy": {
+   "valuePerLiter": 4
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.15
+  },
+  "qualities": {
+   "water": 0.4
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "worldFluid",
+     "worldFluidId": "groundwater",
+     "amountMl": 200
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.08,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tbool flag = body.HoldingItem(body.handSlot) && body.GetItem(body.handSlot).id == \"filterstraw\";\n\t\t\t\tfloat num = ml * 0.001f;\n\t\t\t\tbody.Drink(num * 80f);\n\t\t\t\tbody.temperature -= num * 2.5f;\n\t\t\t\tif (Random.value > 0.5f && !flag)\n\t\t\t\t{\n\t\t\t\t\tbody.sicknessAmount += Random.Range(7f, 15f);\n\t\t\t\t}\n\t\t\t\tif (!flag)\n\t\t\t\t{\n\t\t\t\t\tbody.talker.EatMediocre();\n\t\t\t\t\tbody.happiness -= 2.5f * num;\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 9
+   }
+  }
+ },
+ "heroin": {
+  "id": "heroin",
+  "localeName": "heroin",
+  "locales": {
+   "EN": {
+    "name": "Heroin"
+   },
+   "zh-CN": {
+    "name": "海洛因"
+   }
+  },
+  "appearance": {
+   "color": "#EBEBEB"
+  },
+  "economy": {
+   "valuePerLiter": 140
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "opiate": 1.5
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "heroin",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.6,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.25,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 1.3,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.5,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 36
+   }
+  }
+ },
+ "disinfectant": {
+  "id": "disinfectant",
+  "localeName": "disinfectant",
+  "locales": {
+   "EN": {
+    "name": "Antiseptic"
+   },
+   "zh-CN": {
+    "name": "消毒剂"
+   }
+  },
+  "appearance": {
+   "color": "#C8FFFF"
+  },
+  "economy": {
+   "valuePerLiter": 55
+  },
+  "properties": {
+   "healthUsable": true,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1.25
+  },
+  "qualities": {
+   "disinfectant": 1.5
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "disinfectant",
+     "amountMl": 200
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 98,
+     "requiredInt": 9,
+     "category": "medicine",
+     "amountMl": 100,
+     "ingredients": [
+      {
+       "minimumCondition": 25,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 50,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "soap"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "blood",
+        "amount": 25
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 50
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.15,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 100f;\n\t\t\t\tbody.Drink(4f * num);\n\t\t\t\tbody.sicknessAmount += 15f * num;\n\t\t\t\tbody.limbs[0].SetDisinfect(Mathf.Clamp01(num) * 240f);\n\t\t\t\tbody.talker.EatBad();\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 10f;\n\t\t\t\tlimb.pain += 10f * Mathf.Clamp01(num);\n\t\t\t\tlimb.SetDisinfect(Mathf.Min(240f * num, 240f));\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 37
+   }
+  }
+ },
+ "epinephrine": {
+  "id": "epinephrine",
+  "localeName": "epinephrine",
+  "locales": {
+   "EN": {
+    "name": "Epinephrine"
+   },
+   "zh-CN": {
+    "name": "肾上腺素"
+   }
+  },
+  "appearance": {
+   "color": "#A1FFE9"
+  },
+  "economy": {
+   "valuePerLiter": 80
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "combatpen",
+     "amountMl": 15
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 20f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"epinephrine\", () =>\n\t\t\t\t{\n\t\t\t\t\tbody.adrenaline = 100f;\n\t\t\t\t\tif (body.alive && body.inCardiacArrest && Random.value < 0.05f)\n\t\t\t\t\t{\n\t\t\t\t\t\tbody.heartRate = 200f;\n\t\t\t\t\t\tbody.fibrillationProgress = 50f;\n\t\t\t\t\t\tSteamManager.TryUnlockAchievement(\"DEADMANWALKING\");\n\t\t\t\t\t}\n\t\t\t\t\tif (CoUtils.instance.DurationOf(\"epinephrine\") > 240f)\n\t\t\t\t\t{\n\t\t\t\t\t\tbody.TryStartFibrillation(forced: true);\n\t\t\t\t\t}\n\t\t\t\t}, 20f * num);\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 20f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"epinephrine\", () =>\n\t\t\t\t{\n\t\t\t\t\tlimb.body.adrenaline = 100f;\n\t\t\t\t\tif (limb.body.alive && limb.body.inCardiacArrest && Random.value < 0.05f)\n\t\t\t\t\t{\n\t\t\t\t\t\tlimb.body.heartRate = 200f;\n\t\t\t\t\t\tlimb.body.fibrillationProgress = 50f;\n\t\t\t\t\t\tSteamManager.TryUnlockAchievement(\"DEADMANWALKING\");\n\t\t\t\t\t}\n\t\t\t\t\tif (CoUtils.instance.DurationOf(\"epinephrine\") > 240f)\n\t\t\t\t\t{\n\t\t\t\t\t\tlimb.body.TryStartFibrillation(forced: true);\n\t\t\t\t\t}\n\t\t\t\t}, 120f * num);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 54
+   }
+  }
+ },
+ "energydrink": {
+  "id": "energydrink",
+  "localeName": "energydrink",
+  "locales": {
+   "EN": {
+    "name": "Energy drink"
+   },
+   "zh-CN": {
+    "name": "能量饮料"
+   }
+  },
+  "appearance": {
+   "color": "#BB00FF"
+  },
+  "economy": {
+   "valuePerLiter": 20
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.7
+  },
+  "qualities": {
+   "water": 0.3
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "energydrink",
+     "amountMl": 250
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "stamina": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.25,
+      "valueMode": "scaled"
+     },
+     "energy": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.2,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.2,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.025,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.004,
+      "valueMode": "scaled"
+     },
+     "talk": "Good",
+     "caffeinated": {
+      "type": "instant",
+      "action": "add",
+      "value": 4,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 56
+   }
+  }
+ },
+ "fat": {
+  "id": "fat",
+  "localeName": "fat",
+  "locales": {
+   "EN": {
+    "name": "Fat"
+   },
+   "zh-CN": {
+    "name": "脂肪"
+   }
+  },
+  "appearance": {
+   "color": "#D1BE3F"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 2
+  },
+  "qualities": {
+   "fat": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 83,
+     "requiredInt": 8,
+     "category": "food",
+     "amountMl": 100,
+     "ingredients": [
+      {
+       "minimumCondition": 0.2,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "meat",
+        "amount": 1
+       }
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": false,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "heatsource",
+        "amount": 1
+       }
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": false,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "cutting",
+        "amount": 0.5
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.008,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.005,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "talk": "Mediocre"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 57
+   }
+  }
+ },
+ "fentanyl": {
+  "id": "fentanyl",
+  "localeName": "fentanyl",
+  "locales": {
+   "EN": {
+    "name": "Fentanyl"
+   },
+   "zh-CN": {
+    "name": "芬太尼"
+   }
+  },
+  "appearance": {
+   "color": "#57F2FF"
+  },
+  "economy": {
+   "valuePerLiter": 2000
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "opiate": 40
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "fentanyl",
+     "amountMl": 10
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 11,
+     "requiredInt": 11,
+     "category": "medicine",
+     "amountMl": 10,
+     "ingredients": [
+      {
+       "minimumCondition": 50,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "morphine"
+      },
+      {
+       "minimumCondition": 25,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 25
+       }
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "flammablepowder"
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 40,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 42,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 58
+   }
+  }
+ },
+ "hotsauce": {
+  "id": "hotsauce",
+  "localeName": "hotsauce",
+  "locales": {
+   "EN": {
+    "name": "Hot sauce"
+   },
+   "zh-CN": {
+    "name": "辣酱"
+   }
+  },
+  "appearance": {
+   "color": "#FF0000"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {
+   "condiment": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.02,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.03,
+      "valueMode": "scaled"
+     },
+     "temperature": "持续 25 秒，每秒检查体温，低于 41°C 时升高 0.2°C；单次变化可能使体温超过 41°C。"
+    },
+    "Head": {
+     "pain": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.12,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 100f;\n\t\t\t\tbody.Drink(4f * num);\n\t\t\t\tbody.Eat(5f * num, 2f * num, 0);\n\t\t\t\tbody.sicknessAmount += 3f * num;\n\t\t\t\tbody.limbs[0].pain += 12f * num;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"hotsauce\", () =>\n\t\t\t\t{\n\t\t\t\t\tif (body.temperature < 41f)\n\t\t\t\t\t{\n\t\t\t\t\t\tbody.temperature += 0.2f;\n\t\t\t\t\t}\n\t\t\t\t}, 25f);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 65
+   }
+  }
+ },
+ "lrdserum": {
+  "id": "lrdserum",
+  "localeName": "lrdserum",
+  "locales": {
+   "EN": {
+    "name": "L.R.D. Serum"
+   },
+   "zh-CN": {
+    "name": "L.R.D.血清"
+   }
+  },
+  "appearance": {
+   "color": "#D4CB87"
+  },
+  "economy": {
+   "valuePerLiter": 120
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "lrd",
+     "amountMl": 75
+    },
+    {
+     "type": "container",
+     "itemId": "makeshiftlrd",
+     "amountMl": 50
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 105,
+     "requiredInt": 11,
+     "category": "medicine",
+     "amountMl": 25,
+     "ingredients": [
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "disinfectant",
+        "amount": 25
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 50
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "opiate",
+        "amount": 25
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "blood",
+        "amount": 25
+       }
+      },
+      {
+       "minimumCondition": 25,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 0
+   }
+  }
+ },
+ "icetea": {
+  "id": "icetea",
+  "localeName": "icedtea",
+  "locales": {
+   "EN": {
+    "name": "Iced tea"
+   },
+   "zh-CN": {
+    "name": "冰茶"
+   }
+  },
+  "appearance": {
+   "color": "#FA8734"
+  },
+  "economy": {
+   "valuePerLiter": 12
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.4
+  },
+  "qualities": {
+   "water": 0.5
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "icetea",
+     "amountMl": 500
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.004,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.003,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.014,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.035,
+      "valueMode": "scaled"
+     },
+     "talk": "Good"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 4
+   }
+  }
+ },
+ "lowgradestimulant": {
+  "id": "lowgradestimulant",
+  "localeName": "lowgradestimulant",
+  "locales": {
+   "EN": {
+    "name": "Off-brand stimulant"
+   },
+   "zh-CN": {
+    "name": "杂牌兴奋剂"
+   }
+  },
+  "appearance": {
+   "color": "#909090"
+  },
+  "economy": {
+   "valuePerLiter": 20
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.015,
+      "valueMode": "scaled"
+     },
+     "talk": "Mediocre"
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 40f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"lowgradestimulant\", () =>\n\t\t\t\t{\n\t\t\t\t\tLowGradeStimulantStep(body.limbs[1]);\n\t\t\t\t}, num * 100f);\n\t\t\t\tbody.happiness -= 0.6f * num;\n\t\t\t\tbody.talker.EatMediocre();\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 40f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"lowgradestimulant\", () =>\n\t\t\t\t{\n\t\t\t\t\tLowGradeStimulantStep(limb);\n\t\t\t\t}, num * 130f);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 22
+   }
+  }
+ },
+ "lemonade": {
+  "id": "lemonade",
+  "localeName": "lemonade",
+  "locales": {
+   "EN": {
+    "name": "Lemonade"
+   },
+   "zh-CN": {
+    "name": "柠檬水"
+   }
+  },
+  "appearance": {
+   "color": "#FFF761"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.4
+  },
+  "qualities": {
+   "water": 0.5
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "lemonade",
+     "amountMl": 750
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.002,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.003,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.012,
+      "valueMode": "scaled"
+     },
+     "talk": "Good"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 24
+   }
+  }
+ },
+ "mercury": {
+  "id": "mercury",
+  "localeName": "mercury",
+  "locales": {
+   "EN": {
+    "name": "Mercury"
+   },
+   "zh-CN": {
+    "name": "汞"
+   }
+  },
+  "appearance": {
+   "color": "#4D4D4D"
+  },
+  "economy": {
+   "valuePerLiter": 8
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 10
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.25,
+      "valueMode": "scaled"
+     },
+     "bloodViscosity": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.2,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "brainHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 0.05,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 2,
+       "durationMode": "scaled"
+      }
+     },
+     "talk": "Bad"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 32
+   }
+  }
+ },
+ "midgradestimulant": {
+  "id": "midgradestimulant",
+  "localeName": "midgradestimulant",
+  "locales": {
+   "EN": {
+    "name": "Hard stimulant"
+   },
+   "zh-CN": {
+    "name": "烈性兴奋剂"
+   }
+  },
+  "appearance": {
+   "color": "#D1D1D1"
+  },
+  "economy": {
+   "valuePerLiter": 24
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.02,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "stamina": {
+      "type": "periodic",
+      "action": "add",
+      "value": 2,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3.6,
+       "durationMode": "scaled"
+      }
+     },
+     "consciousness": {
+      "type": "periodic",
+      "action": "add",
+      "value": 2,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3.6,
+       "durationMode": "scaled"
+      }
+     },
+     "energy": {
+      "type": "periodic",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3.6,
+       "durationMode": "scaled"
+      }
+     },
+     "sicknessAmount": {
+      "type": "periodic",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3.6,
+       "durationMode": "scaled"
+      }
+     },
+     "internalBleeding": {
+      "type": "periodic",
+      "action": "add",
+      "value": 0.06,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3.6,
+       "durationMode": "scaled"
+      }
+     },
+     "adrenaline": {
+      "type": "periodic",
+      "action": "add",
+      "value": 7,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 3.6,
+       "durationMode": "scaled"
+      }
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 50f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"midgradestimulant\", () =>\n\t\t\t\t{\n\t\t\t\t\tfloat num2 = CoUtils.instance.DurationOf(\"midgradestimulant\");\n\t\t\t\t\tlimb.body.stamina += 2f;\n\t\t\t\t\tlimb.body.consciousness += 2f;\n\t\t\t\t\tlimb.body.energy += 0.1f;\n\t\t\t\t\tlimb.body.sicknessAmount += 0.1f;\n\t\t\t\t\tlimb.body.internalBleeding += 0.06f;\n\t\t\t\t\tlimb.body.adrenaline += 7f;\n\t\t\t\t\tif (Random.value < 0.1f)\n\t\t\t\t\t{\n\t\t\t\t\t\tlimb.body.miscShakeIntensity += 1.5f;\n\t\t\t\t\t}\n\t\t\t\t\tif (limb.body.stimulantMultiplier < 0.25f)\n\t\t\t\t\t{\n\t\t\t\t\t\tlimb.body.stimulantMultiplier += 0.035f;\n\t\t\t\t\t}\n\t\t\t\t\tif (num2 > 220f)\n\t\t\t\t\t{\n\t\t\t\t\t\tif (Random.value < 0.18f)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tlimb.body.miscShakeIntensity += 1.5f;\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif (Random.value < 0.1f)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tlimb.body.stamina -= 35f;\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif (Random.value < 0.06f)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tlimb.body.Ragdoll();\n\t\t\t\t\t\t}\n\t\t\t\t\t\tlimb.body.internalBleeding += 0.15f;\n\t\t\t\t\t\tlimb.body.brainHealth -= 0.05f;\n\t\t\t\t\t\tif (limb.body.limbs[1].pain < 60f)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tlimb.body.limbs[1].pain += 4f;\n\t\t\t\t\t\t}\n\t\t\t\t\t\tlimb.body.overdoseIndex = 3;\n\t\t\t\t\t}\n\t\t\t\t\tif (CoUtils.instance.HighestDurationOf(\"midgradestimulant\") > 59f)\n\t\t\t\t\t{\n\t\t\t\t\t\tif (num2 < 30f && Random.value < 0.1f)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tlimb.body.stamina -= 25f;\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif (num2 <= 1f)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tlimb.body.energy -= 30f;\n\t\t\t\t\t\t\tlimb.body.vomiter.Vomit();\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}, num * 180f);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 39
+   }
+  }
+ },
+ "ketchup": {
+  "id": "ketchup",
+  "localeName": "ketchup",
+  "locales": {
+   "EN": {
+    "name": "Ketchup"
+   },
+   "zh-CN": {
+    "name": "番茄酱"
+   }
+  },
+  "appearance": {
+   "color": "#FF2B2B"
+  },
+  "economy": {
+   "valuePerLiter": 18
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {
+   "condiment": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "ketchup",
+     "amountMl": 300
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.06,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.08,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.025,
+      "valueMode": "scaled"
+     },
+     "talk": "Mediocre"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 44
+   }
+  }
+ },
+ "lumalgae": {
+  "id": "lumalgae",
+  "localeName": "lumalgae",
+  "locales": {
+   "EN": {
+    "name": "Lumalgae"
+   },
+   "zh-CN": {
+    "name": "荧光藻"
+   }
+  },
+  "appearance": {
+   "color": "#219900"
+  },
+  "economy": {
+   "valuePerLiter": 2
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1.6
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "worldFluid",
+     "worldFluidId": "lumalgae",
+     "amountMl": 200
+    }
+   ]
+  },
+  "foodType": 2,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.065,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.02,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.001,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad",
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "bodyEffect": "当前选中的手未持有过滤吸管时，每次饮用另有 10% 概率调用呕吐流程；此项不含共享进食规则触发的呕吐。"
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tbool flag = body.HoldingItem(body.handSlot) && body.GetItem(body.handSlot).id == \"filterstraw\";\n\t\t\t\tfloat num = ml * 0.001f;\n\t\t\t\tbody.Drink(num * 65f);\n\t\t\t\tbody.Eat(num * 20f, num, 2);\n\t\t\t\tbody.temperature -= num * 2.5f;\n\t\t\t\tbody.talker.EatBad();\n\t\t\t\tbody.happiness -= 10f * num;\n\t\t\t\tif (Random.value > 0.35f)\n\t\t\t\t{\n\t\t\t\t\tbody.sicknessAmount += Random.Range(num * 60f, num * 85f) * (flag ? 0.3f : 1f);\n\t\t\t\t}\n\t\t\t\tif (Random.value < 0.1f && !flag)\n\t\t\t\t{\n\t\t\t\t\tbody.vomiter.Vomit();\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 60
+   }
+  }
+ },
+ "keratinbooster": {
+  "id": "keratinbooster",
+  "localeName": "keratinbooster",
+  "locales": {
+   "EN": {
+    "name": "Keratin-booster"
+   },
+   "zh-CN": {
+    "name": "角蛋白增强剂"
+   }
+  },
+  "appearance": {
+   "color": "#FFD154"
+  },
+  "economy": {
+   "valuePerLiter": 150
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "keratinbooster",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "clawRegrowTime": {
+      "type": "instant",
+      "action": "add",
+      "value": 24,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "clawRegrowTime": {
+      "type": "instant",
+      "action": "add",
+      "value": 28,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.02f;\n\t\t\t\tif (body.clawRegrowTime > 3600f)\n\t\t\t\t{\n\t\t\t\t\tbody.sicknessAmount += num * 10f;\n\t\t\t\t\tbody.clawRegrowTime += 1200f * num * 0.1f;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tbody.clawRegrowTime += 1200f * num;\n\t\t\t\t}\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.02f;\n\t\t\t\tif (limb.body.clawRegrowTime > 3600f)\n\t\t\t\t{\n\t\t\t\t\tlimb.body.sicknessAmount += num * 10f;\n\t\t\t\t\tlimb.body.clawRegrowTime += 1400f * num * 0.1f;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tlimb.body.clawRegrowTime += 1400f * num;\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 63
+   }
+  }
+ },
+ "localanesthetic": {
+  "id": "localanesthetic",
+  "localeName": "localanesthetic",
+  "locales": {
+   "EN": {
+    "name": "Local anesthetic"
+   },
+   "zh-CN": {
+    "name": "局部麻醉剂"
+   }
+  },
+  "appearance": {
+   "color": "#CEBAFF"
+  },
+  "economy": {
+   "valuePerLiter": 120
+  },
+  "properties": {
+   "healthUsable": true,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "disinfectant": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "targetLimb": {
+     "pain": {
+      "type": "periodic",
+      "action": "set",
+      "value": 0,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 6,
+       "durationMode": "scaled"
+      }
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.001f;\n\t\t\t\tbody.sicknessAmount += num * 100f;\n\t\t\t\tif (Random.value < ml / 80f)\n\t\t\t\t{\n\t\t\t\t\tbody.vomiter.Vomit();\n\t\t\t\t}\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.1f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"localanesthetic\" + limb.name, () =>\n\t\t\t\t{\n\t\t\t\t\tlimb.pain = 0f;\n\t\t\t\t\tlimb.forceMult = ((CoUtils.instance.DurationOf(\"localanesthetic\" + limb.name) > 2f) ? 0f : 1f);\n\t\t\t\t}, 60f * num);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 14
+   }
+  }
+ },
+ "oil": {
+  "id": "oil",
+  "localeName": "oil",
+  "locales": {
+   "EN": {
+    "name": "Oil"
+   },
+   "zh-CN": {
+    "name": "原油"
+   }
+  },
+  "appearance": {
+   "color": "#473215"
+  },
+  "economy": {
+   "valuePerLiter": 1
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 5
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "worldFluid",
+     "worldFluidId": "oil",
+     "amountMl": 200
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.02,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.03,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad",
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 3,
+      "valueMode": "fixed"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.3,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 6
+   }
+  }
+ },
+ "morphine": {
+  "id": "morphine",
+  "localeName": "morphine",
+  "locales": {
+   "EN": {
+    "name": "Morphine"
+   },
+   "zh-CN": {
+    "name": "吗啡"
+   }
+  },
+  "appearance": {
+   "color": "#967B5F"
+  },
+  "economy": {
+   "valuePerLiter": 110
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "opiate": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "mindwipe",
+     "amountMl": 30
+    },
+    {
+     "type": "container",
+     "itemId": "morphine",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 10,
+     "requiredInt": 9,
+     "category": "medicine",
+     "amountMl": 50,
+     "ingredients": [
+      {
+       "minimumCondition": 75,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "opium"
+      },
+      {
+       "minimumCondition": 10,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 15
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.4,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.9,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 7
+   }
+  }
+ },
+ "oliveoil": {
+  "id": "oliveoil",
+  "localeName": "oliveoil",
+  "locales": {
+   "EN": {
+    "name": "Olive oil"
+   },
+   "zh-CN": {
+    "name": "橄榄油"
+   }
+  },
+  "appearance": {
+   "color": "#818707"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {
+   "fat": 0.25
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.03,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.08,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.02,
+      "valueMode": "scaled"
+     },
+     "dirtyness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.12,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "talk": "Mediocre"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 27
+   }
+  }
+ },
+ "orangejuice": {
+  "id": "orangejuice",
+  "localeName": "orangejuice",
+  "locales": {
+   "EN": {
+    "name": "Orange juice"
+   },
+   "zh-CN": {
+    "name": "橙汁"
+   }
+  },
+  "appearance": {
+   "color": "#FF8929"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.4
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.0007,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.001,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.015,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.025,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 28
+   }
+  }
+ },
+ "milk": {
+  "id": "milk",
+  "localeName": "milk",
+  "locales": {
+   "EN": {
+    "name": "Milk"
+   },
+   "zh-CN": {
+    "name": "牛奶"
+   }
+  },
+  "appearance": {
+   "color": "#FFFFFF"
+  },
+  "economy": {
+   "valuePerLiter": 13
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.4
+  },
+  "qualities": {
+   "water": 0.5
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "milk",
+     "amountMl": 1000
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 107,
+     "requiredInt": 0,
+     "category": "food",
+     "amountMl": 500,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 470
+       }
+      },
+      {
+       "minimumCondition": 30,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "powderedmilk"
+      }
+     ]
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.03,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.004,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.005,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 40
+   }
+  }
+ },
+ "mindwipe": {
+  "id": "mindwipe",
+  "localeName": "mindwipe",
+  "locales": {
+   "EN": {
+    "name": "Mindwipe"
+   },
+   "zh-CN": {
+    "name": "精神抹除剂"
+   }
+  },
+  "appearance": {
+   "color": "#21485E"
+  },
+  "economy": {
+   "valuePerLiter": 1333
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "mindwipe",
+     "amountMl": 30
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\t_ = ml / 30f;\n\t\t\t\tif (!body.GetComponent<MindwipeScript>())\n\t\t\t\t{\n\t\t\t\t\tbody.AddComponent<MindwipeScript>();\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 49
+   }
+  }
+ },
+ "naltrexone": {
+  "id": "naltrexone",
+  "localeName": "naltrexone",
+  "locales": {
+   "EN": {
+    "name": "Naltrexone"
+   },
+   "zh-CN": {
+    "name": "纳曲酮"
+   }
+  },
+  "appearance": {
+   "color": "#FFFFFF"
+  },
+  "economy": {
+   "valuePerLiter": 100
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "naltrexone",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 86,
+     "requiredInt": 10,
+     "category": "medicine",
+     "amountMl": 200,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "digestioncrystalshard"
+      },
+      {
+       "minimumCondition": 20,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "opiate",
+        "amount": 50
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 1,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 1.25,
+       "durationMode": "scaled"
+      }
+     },
+     "bodyEffect": "有概率触发呕吐流程，概率随饮用量增加（20 mL 对应 15%）。",
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.1,
+      "valueMode": "scaled"
+     },
+     "antagonistAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.75,
+      "valueMode": "scaled"
+     },
+     "opiateTolerance": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.75,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.05f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"naltrexone\", () =>\n\t\t\t\t{\n\t\t\t\t\tbody.sicknessAmount--;\n\t\t\t\t}, 25f * num);\n\t\t\t\tif (Random.Range(0f, 1f) < 0.15f * num)\n\t\t\t\t{\n\t\t\t\t\tbody.vomiter.Vomit();\n\t\t\t\t}\n\t\t\t\tbody.happiness -= 2f * num;\n\t\t\t\tif (body.TryGetComponent<Painkillers>(out var component))\n\t\t\t\t{\n\t\t\t\t\tcomponent.antagonistAmount += 15f * num;\n\t\t\t\t\tcomponent.opiateTolerance -= 15f * num;\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 51
+   }
+  }
+ },
+ "naloxone": {
+  "id": "naloxone",
+  "localeName": "naloxone",
+  "locales": {
+   "EN": {
+    "name": "Naloxone"
+   },
+   "zh-CN": {
+    "name": "纳洛酮"
+   }
+  },
+  "appearance": {
+   "color": "#E8D8BE"
+  },
+  "economy": {
+   "valuePerLiter": 80
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "naloxone",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onHealthUse": {
+    "body": {
+     "antagonistAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.5,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.01f;\n\t\t\t\tif (limb.body.TryGetComponent<Painkillers>(out var component))\n\t\t\t\t{\n\t\t\t\t\tcomponent.antagonistAmount += num * 50f;\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 52
+   }
+  }
+ },
+ "mold": {
+  "id": "mold",
+  "localeName": "mold",
+  "locales": {
+   "EN": {
+    "name": "Mold"
+   },
+   "zh-CN": {
+    "name": "霉菌"
+   }
+  },
+  "appearance": {
+   "color": "#3F4F32"
+  },
+  "economy": {
+   "valuePerLiter": 0
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 3
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.03,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.004,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.3,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "bodyEffect": "单次饮用量大于 25 mL 时，额外调用呕吐流程。"
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 100f;\n\t\t\t\tbody.Eat(3f * num, 0.4f * num, 0);\n\t\t\t\tbody.sicknessAmount += 30f * num;\n\t\t\t\tbody.happiness -= 4f * num;\n\t\t\t\tif (ml > 25f)\n\t\t\t\t{\n\t\t\t\t\tbody.vomiter.Vomit();\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 73
+   }
+  }
+ },
+ "opium": {
+  "id": "opium",
+  "localeName": "opium",
+  "locales": {
+   "EN": {
+    "name": "Opium"
+   },
+   "zh-CN": {
+    "name": "鸦片"
+   }
+  },
+  "appearance": {
+   "color": "#FFEB51"
+  },
+  "economy": {
+   "valuePerLiter": 100
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "opiate": 0.4
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "opium",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 9,
+     "requiredInt": 7,
+     "category": "medicine",
+     "amountMl": 50,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "mushpear"
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "mushpear"
+      },
+      {
+       "minimumCondition": 10,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 50
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.2,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.4,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 74
+   }
+  }
+ },
+ "procoagulant": {
+  "id": "procoagulant",
+  "localeName": "procoagulant",
+  "locales": {
+   "EN": {
+    "name": "Procoagulant"
+   },
+   "zh-CN": {
+    "name": "促凝剂"
+   }
+  },
+  "appearance": {
+   "color": "#BD5660"
+  },
+  "economy": {
+   "valuePerLiter": 250
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "bloodcoagulant",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 110,
+     "requiredInt": 14,
+     "category": "medicine",
+     "amountMl": 100,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "clottingmush"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "blood",
+        "amount": 50
+       }
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "bunchunk"
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "bunchunk"
+      },
+      {
+       "minimumCondition": 25,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "internalBleeding": {
+      "type": "periodic",
+      "action": "multiply",
+      "value": 0.95,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.359928,
+       "durationMode": "scaled"
+      }
+     },
+     "bloodViscosity": {
+      "type": "periodic",
+      "action": "add",
+      "value": 1.75,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.359928,
+       "durationMode": "scaled"
+      }
+     },
+     "strokeAmount": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 10,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.359928,
+       "durationMode": "scaled"
+      }
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.059988,
+      "valueMode": "scaled"
+     }
+    },
+    "allLimbs": {
+     "bleedAmount": {
+      "type": "periodic",
+      "action": "multiply",
+      "value": 0.96,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.359928,
+       "durationMode": "scaled"
+      }
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "internalBleeding": {
+      "type": "periodic",
+      "action": "multiply",
+      "value": 0.95,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.59988,
+       "durationMode": "scaled"
+      }
+     },
+     "bloodViscosity": {
+      "type": "periodic",
+      "action": "add",
+      "value": 1.75,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.59988,
+       "durationMode": "scaled"
+      }
+     },
+     "strokeAmount": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 10,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.59988,
+       "durationMode": "scaled"
+      }
+     }
+    },
+    "allLimbs": {
+     "bleedAmount": {
+      "type": "periodic",
+      "action": "multiply",
+      "value": 0.96,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.59988,
+       "durationMode": "scaled"
+      }
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 2
+   }
+  }
+ },
+ "powderedmilk": {
+  "id": "powderedmilk",
+  "localeName": "powderedmilk",
+  "locales": {
+   "EN": {
+    "name": "Powdered milk"
+   },
+   "zh-CN": {
+    "name": "奶粉"
+   }
+  },
+  "appearance": {
+   "color": "#F2F2F2"
+  },
+  "economy": {
+   "valuePerLiter": 26
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.266667,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.266667,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.013333,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.133333,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.016667,
+      "valueMode": "scaled"
+     },
+     "talk": "Mediocre"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 12
+   }
+  }
+ },
+ "painkillers": {
+  "id": "painkillers",
+  "localeName": "painkillers",
+  "locales": {
+   "EN": {
+    "name": "Painkillers"
+   },
+   "zh-CN": {
+    "name": "止痛药"
+   }
+  },
+  "appearance": {
+   "color": "#FFFFFF"
+  },
+  "economy": {
+   "valuePerLiter": 125
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {
+   "opiate": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "painkillers",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 12,
+     "requiredInt": 10,
+     "category": "medicine",
+     "amountMl": 200,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "reliefcrystalshard"
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "plasticchunk"
+      },
+      {
+       "minimumCondition": 20,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 50
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "opiateAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 1.4,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 29
+   }
+  }
+ },
+ "oxyline": {
+  "id": "oxyline",
+  "localeName": "oxyline",
+  "locales": {
+   "EN": {
+    "name": "Oxyline"
+   },
+   "zh-CN": {
+    "name": "氧脉素"
+   }
+  },
+  "appearance": {
+   "color": "#4DFFDE"
+  },
+  "economy": {
+   "valuePerLiter": 80
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "combatpen",
+     "amountMl": 25
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "UpTorso": {
+     "pain": {
+      "type": "periodic",
+      "action": "add",
+      "value": 8,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.3333333333333333,
+       "durationMode": "scaled"
+      }
+     },
+     "muscleHealth": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 2.5,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.3333333333333333,
+       "durationMode": "scaled"
+      }
+     }
+    },
+    "body": {
+     "shock": {
+      "type": "periodic",
+      "action": "add",
+      "value": 28,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.3333333333333333,
+       "durationMode": "scaled"
+      }
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "respiratoryRate": {
+      "type": "periodic",
+      "action": "add",
+      "value": 2.5,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 2,
+       "durationMode": "scaled"
+      }
+     },
+     "bloodOxygen": {
+      "type": "periodic",
+      "action": "add",
+      "value": 1.666,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 2,
+       "durationMode": "scaled"
+      }
+     },
+     "stamina": {
+      "type": "periodic",
+      "action": "add",
+      "value": 2.5,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 2,
+       "durationMode": "scaled"
+      }
+     },
+     "fibrillationProgress": {
+      "type": "periodic",
+      "action": "subtract",
+      "value": 1.2,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 2,
+       "durationMode": "scaled"
+      }
+     },
+     "bloodVolume": {
+      "type": "periodic",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 2,
+       "durationMode": "scaled"
+      }
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 30f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"oxylinedrink\", () =>\n\t\t\t\t{\n\t\t\t\t\tbody.limbs[1].pain += 8f;\n\t\t\t\t\tbody.limbs[1].muscleHealth -= 2.5f;\n\t\t\t\t\tbody.shock += 28f;\n\t\t\t\t\tif (!body.standing)\n\t\t\t\t\t{\n\t\t\t\t\t\tLimb[] limbs = body.limbs;\n\t\t\t\t\t\tfor (int i = 0; i < limbs.Length; i++)\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tlimbs[i].rb.velocity += Random.insideUnitCircle * 3.5f;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}, 10f * num);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 30
+   }
+  }
+ },
+ "producejuice": {
+  "id": "producejuice",
+  "localeName": "producejuice",
+  "locales": {
+   "EN": {
+    "name": "Produce juice"
+   },
+   "zh-CN": {
+    "name": "粗制果汁"
+   }
+  },
+  "appearance": {
+   "color": "#FFFEB5"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.9
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 106,
+     "requiredInt": 2,
+     "category": "food",
+     "amountMl": 250,
+     "ingredients": [
+      {
+       "minimumCondition": 0.5,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "produce",
+        "amount": 1
+       }
+      },
+      {
+       "minimumCondition": 0.5,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "produce",
+        "amount": 1
+       }
+      },
+      {
+       "minimumCondition": 0.5,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "produce",
+        "amount": 1
+       }
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": false,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "hammering",
+        "amount": 0.1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.085,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.003,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.00025,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.02,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.002,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 47
+   }
+  }
+ },
+ "refinedjuice": {
+  "id": "refinedjuice",
+  "localeName": "refinedjuice",
+  "locales": {
+   "EN": {
+    "name": "Refined juice"
+   },
+   "zh-CN": {
+    "name": "精制果汁"
+   }
+  },
+  "appearance": {
+   "color": "#FFE173"
+  },
+  "economy": {
+   "valuePerLiter": 18
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.7
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 108,
+     "requiredInt": 4,
+     "category": "food",
+     "amountMl": 200,
+     "ingredients": [
+      {
+       "minimumCondition": 250,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "producejuice"
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": false,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "heatsource",
+        "amount": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.095,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.002,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.002,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.025,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.002,
+      "valueMode": "scaled"
+     },
+     "talk": "Good"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 48
+   }
+  }
+ },
+ "redblood": {
+  "id": "redblood",
+  "localeName": "redblood",
+  "locales": {
+   "EN": {
+    "name": "Red blood"
+   },
+   "zh-CN": {
+    "name": "红色血液"
+   }
+  },
+  "appearance": {
+   "color": "#C70A0A"
+  },
+  "economy": {
+   "valuePerLiter": 18
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "blood": 1.2
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "bloodbaghuman",
+     "amountMl": 750
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.026667,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.093333,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.009333,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "bloodVolume": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.066667,
+      "valueMode": "scaled"
+     },
+     "septicShock": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.053333,
+      "valueMode": "scaled"
+     }
+    },
+    "targetLimb": {
+     "muscleHealth": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.04,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 50
+   }
+  }
+ },
+ "radwater": {
+  "id": "radwater",
+  "localeName": "radwater",
+  "locales": {
+   "EN": {
+    "name": "Clean water"
+   },
+   "zh-CN": {
+    "name": "过滤水"
+   }
+  },
+  "appearance": {
+   "color": "#79E0DD"
+  },
+  "economy": {
+   "valuePerLiter": 10
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.2
+  },
+  "qualities": {
+   "water": 0.8
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 66
+   },
+   "locales": {
+    "zh-CN": {
+     "name": "过滤水（辐射水）"
+    }
+   }
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.002,
+      "valueMode": "scaled"
+     },
+     "radiationSickness": {
+      "type": "periodic",
+      "action": "add",
+      "value": 0.35,
+      "valueMode": "fixed",
+      "timed": {
+       "intervalSeconds": 1,
+       "durationSeconds": 0.45,
+       "durationMode": "scaled"
+      }
+     }
+    }
+   }
+  }
+ },
+ "reliefcream": {
+  "id": "reliefcream",
+  "localeName": "reliefcream",
+  "locales": {
+   "EN": {
+    "name": "Relief cream"
+   },
+   "zh-CN": {
+    "name": "镇痛膏"
+   }
+  },
+  "appearance": {
+   "color": "#BD5BC9"
+  },
+  "economy": {
+   "valuePerLiter": 120
+  },
+  "properties": {
+   "healthUsable": true,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.75
+  },
+  "qualities": {
+   "disinfectant": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "paincream",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 99,
+     "requiredInt": 9,
+     "category": "medicine",
+     "amountMl": 100,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "item",
+       "id": "flammablepowder"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 50
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "blood",
+        "amount": 25
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "opiate",
+        "amount": 50
+       }
+      },
+      {
+       "minimumCondition": 25,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     },
+     "bodyEffect": [
+      "vomit"
+     ]
+    }
+   },
+   "onHealthUse": {
+    "targetLimb": {
+     "skinHealAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.3,
+      "valueMode": "scaled"
+     }
+    },
+    "sound": [
+     "cream"
+    ]
+   }
+  },
+  "assets": {
+   "sounds": [
+    "assets/sounds/Liquids_cream.ogg"
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.001f;\n\t\t\t\tbody.sicknessAmount += num * 100f;\n\t\t\t\tif (Random.value < ml / 80f)\n\t\t\t\t{\n\t\t\t\t\tbody.vomiter.Vomit();\n\t\t\t\t}\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.1f;\n\t\t\t\tlimb.skinHealAmount += num * 3f;\n\t\t\t\tCoUtils.instance.DoTimedOp(\"reliefcream\" + limb.name, () =>\n\t\t\t\t{\n\t\t\t\t\tlimb.pain = Mathf.Lerp(limb.pain, limb.pain * 0.1f, 0.15f);\n\t\t\t\t}, 15f * num);\n\t\t\t\tlimb.SetDisinfect(300f * Mathf.Clamp01(num));\n\t\t\t\tSound.Play(\"cream\", limb.body.transform.position);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 72
+   }
+  }
+ },
+ "redsludge": {
+  "id": "redsludge",
+  "localeName": "redsludge",
+  "locales": {
+   "EN": {
+    "name": "Red sludge"
+   },
+   "zh-CN": {
+    "name": "猩红垢泥"
+   }
+  },
+  "appearance": {
+   "color": "#C92E1C"
+  },
+  "economy": {
+   "valuePerLiter": 0
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 3
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "worldFluid",
+     "worldFluidId": "redsludge",
+     "amountMl": 200
+    }
+   ]
+  },
+  "foodType": 1,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.03,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.03,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad",
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tbool flag = body.HoldingItem(body.handSlot) && body.GetItem(body.handSlot).id == \"filterstraw\";\n\t\t\t\tfloat num = ml * 0.001f;\n\t\t\t\tbody.Drink(num * 30f);\n\t\t\t\tbody.Eat(num * 30f, num * 10f, 1);\n\t\t\t\tbody.talker.EatBad();\n\t\t\t\tbody.happiness -= 50f * num;\n\t\t\t\tbody.sicknessAmount += num * 100f;\n\t\t\t\tif (Random.value < 0.5f && !flag)\n\t\t\t\t{\n\t\t\t\t\tbody.vomiter.Vomit();\n\t\t\t\t}\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 41
+   }
+  }
+ },
+ "sleepingpills": {
+  "id": "sleepingpills",
+  "localeName": "sleepingpills",
+  "locales": {
+   "EN": {
+    "name": "Sleeping pills"
+   },
+   "zh-CN": {
+    "name": "安眠药"
+   }
+  },
+  "appearance": {
+   "color": "#8CA893"
+  },
+  "economy": {
+   "valuePerLiter": 320
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "sleepingpills",
+     "amountMl": 25
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "sound": [
+     "pills"
+    ]
+   }
+  },
+  "assets": {
+   "sounds": [
+    "assets/sounds/Liquids_pills.ogg"
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.2f;\n\t\t\t\tbody.GetOrAddComponent<SleepingPills>().amount += 300f * num;\n\t\t\t\tSound.Play(\"pills\", body.transform.position);\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 13
+   }
+  }
+ },
+ "ringersolution": {
+  "id": "ringersolution",
+  "localeName": "ringersolution",
+  "locales": {
+   "EN": {
+    "name": "Ringer's solution"
+   },
+   "zh-CN": {
+    "name": "林格氏液"
+   }
+  },
+  "appearance": {
+   "color": "#EDEDED"
+  },
+  "economy": {
+   "valuePerLiter": 24
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "water": 0.8
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "ringersolution",
+     "amountMl": 700
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.085714,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.034286,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.005714,
+      "valueMode": "scaled"
+     },
+     "talk": "Mediocre"
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "bloodVolume": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "bloodViscosity": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.057143,
+      "valueMode": "scaled"
+     },
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.085714,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 23
+   }
+  }
+ },
+ "sap": {
+  "id": "sap",
+  "localeName": "sap",
+  "locales": {
+   "EN": {
+    "name": "Tree sap"
+   },
+   "zh-CN": {
+    "name": "树汁"
+   }
+  },
+  "appearance": {
+   "color": "#F7BD34"
+  },
+  "economy": {
+   "valuePerLiter": 15
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 2
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "worldFluid",
+     "worldFluidId": "sap",
+     "amountMl": 200
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.045,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.005,
+      "valueMode": "scaled"
+     },
+     "talk": "Good",
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.005,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.001f;\n\t\t\t\tbody.Drink(40f * num);\n\t\t\t\tbody.Eat(45f * num, 5f * num, 0);\n\t\t\t\tbody.talker.EatGood();\n\t\t\t\tbody.happiness += 5f * num;\n\t\t\t\tbody.sicknessAmount += Random.Range(8f, 9f) * num;\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 26
+   }
+  }
+ },
+ "soup": {
+  "id": "soup",
+  "localeName": "soup",
+  "locales": {
+   "EN": {
+    "name": "Soup"
+   },
+   "zh-CN": {
+    "name": "汤"
+   }
+  },
+  "appearance": {
+   "color": "#7D5100"
+  },
+  "economy": {
+   "valuePerLiter": 20
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.6
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "soup",
+     "amountMl": 300
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 126,
+     "requiredInt": 9,
+     "category": "food",
+     "amountMl": 300,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": false,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "heatsource",
+        "amount": 1
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 200
+       }
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "fat",
+        "amount": 25
+       }
+      },
+      {
+       "minimumCondition": 0.2,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "meat",
+        "amount": 1
+       }
+      },
+      {
+       "minimumCondition": 0,
+       "destroyItem": false,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "cutting",
+        "amount": 0.5
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "foodType": 1,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.005,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.01,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 34
+   }
+  }
+ },
+ "soda": {
+  "id": "soda",
+  "localeName": "soda",
+  "locales": {
+   "EN": {
+    "name": "Soda"
+   },
+   "zh-CN": {
+    "name": "汽水"
+   }
+  },
+  "appearance": {
+   "color": "#705E49"
+  },
+  "economy": {
+   "valuePerLiter": 16
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.6
+  },
+  "qualities": {
+   "water": 0.5
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "sodabottle",
+     "amountMl": 1000
+    },
+    {
+     "type": "container",
+     "itemId": "sodacan",
+     "amountMl": 250
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.003,
+      "valueMode": "scaled"
+     },
+     "stamina": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "energy": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.015,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.004,
+      "valueMode": "scaled"
+     },
+     "talk": "Good",
+     "caffeinated": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.8,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 35
+   }
+  }
+ },
+ "saline": {
+  "id": "saline",
+  "localeName": "saline",
+  "locales": {
+   "EN": {
+    "name": "Saline"
+   },
+   "zh-CN": {
+    "name": "生理盐水"
+   }
+  },
+  "appearance": {
+   "color": "#C4C4C4"
+  },
+  "economy": {
+   "valuePerLiter": 20
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "water": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "saline",
+     "amountMl": 750
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 31,
+     "requiredInt": 9,
+     "category": "medicine",
+     "amountMl": 175,
+     "ingredients": [
+      {
+       "minimumCondition": 150,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "water"
+      },
+      {
+       "minimumCondition": 10,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "blood",
+        "amount": 15
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.093333,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.042667,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.005333,
+      "valueMode": "scaled"
+     },
+     "talk": "Mediocre"
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "bloodVolume": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.053333,
+      "valueMode": "scaled"
+     },
+     "bloodViscosity": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.066667,
+      "valueMode": "scaled"
+     },
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.093333,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 43
+   }
+  }
+ },
+ "sodiumnitroprusside": {
+  "id": "sodiumnitroprusside",
+  "localeName": "sodiumnitroprusside",
+  "locales": {
+   "EN": {
+    "name": "Sodium nitroprusside"
+   },
+   "zh-CN": {
+    "name": "硝普钠"
+   }
+  },
+  "appearance": {
+   "color": "#CF5829"
+  },
+  "economy": {
+   "valuePerLiter": 150
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "sodiumnitroprusside",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.05,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "bloodPressureChangeFromMedicine": {
+      "type": "instant",
+      "action": "add",
+      "value": 6,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 45
+   }
+  }
+ },
+ "soap": {
+  "id": "soap",
+  "localeName": "soap",
+  "locales": {
+   "EN": {
+    "name": "Soap"
+   },
+   "zh-CN": {
+    "name": "肥皂"
+   }
+  },
+  "appearance": {
+   "color": "#A1FFBA"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": true,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1.6
+  },
+  "qualities": {
+   "disinfectant": 0.05
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 84,
+     "requiredInt": 8,
+     "category": "medicine",
+     "amountMl": 100,
+     "ingredients": [
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "fat",
+        "amount": 50
+       }
+      },
+      {
+       "minimumCondition": 10,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "biochem"
+      },
+      {
+       "minimumCondition": 0.9,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquidQuality",
+       "quality": {
+        "id": "water",
+        "amount": 40
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.2,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.02,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "dirtyness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.25,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "unparsedEffects": [
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 100f;\n\t\t\t\tlimb.SetDisinfect(Mathf.Clamp01(num) * 30f);\n\t\t\t\tlimb.body.dirtyness -= num * 25f;\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 53
+   }
+  }
+ },
+ "sportsdrink": {
+  "id": "sportsdrink",
+  "localeName": "sportsdrink",
+  "locales": {
+   "EN": {
+    "name": "Sports drink"
+   },
+   "zh-CN": {
+    "name": "运动饮料"
+   }
+  },
+  "appearance": {
+   "color": "#0A3BFF"
+  },
+  "economy": {
+   "valuePerLiter": 20
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.4
+  },
+  "qualities": {
+   "water": 0.8
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.13,
+      "valueMode": "scaled"
+     },
+     "stamina": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.25,
+      "valueMode": "scaled"
+     },
+     "energy": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.02,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.005,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "talk": "Good"
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 68
+   }
+  }
+ },
+ "streptokinase": {
+  "id": "streptokinase",
+  "localeName": "streptokinase",
+  "locales": {
+   "EN": {
+    "name": "Streptokinase"
+   },
+   "zh-CN": {
+    "name": "链激酶"
+   }
+  },
+  "appearance": {
+   "color": "#427E82"
+  },
+  "economy": {
+   "valuePerLiter": 150
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "streptokinase",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "bloodViscosity": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.749985,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.299994,
+      "valueMode": "scaled"
+     }
+    },
+    "sound": [
+     "drink"
+    ]
+   },
+   "onHealthUse": {
+    "body": {
+     "bloodViscosity": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 1.49997,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.149997,
+      "valueMode": "scaled"
+     }
+    },
+    "sound": [
+     "syringe"
+    ]
+   }
+  },
+  "assets": {
+   "sounds": [
+    "assets/sounds/Liquids_drink.ogg",
+    "assets/sounds/Liquids_syringe.ogg"
+   ]
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 71
+   }
+  }
+ },
+ "water": {
+  "id": "water",
+  "localeName": "cleanwater",
+  "locales": {
+   "EN": {
+    "name": "Clean water"
+   },
+   "zh-CN": {
+    "name": "过滤水"
+   }
+  },
+  "appearance": {
+   "color": "#75D1FF"
+  },
+  "economy": {
+   "valuePerLiter": 14
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {
+   "water": 1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "fentanyl",
+     "amountMl": 90
+    },
+    {
+     "type": "container",
+     "itemId": "heroin",
+     "amountMl": 50
+    },
+    {
+     "type": "container",
+     "itemId": "waterbottle",
+     "amountMl": 500
+    },
+    {
+     "type": "container",
+     "itemId": "waterjug",
+     "amountMl": 3000
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    },
+    {
+     "type": "recipe",
+     "recipe": 115,
+     "requiredInt": 1,
+     "category": "food",
+     "amountMl": 50,
+     "ingredients": [
+      {
+       "minimumCondition": 0,
+       "destroyItem": false,
+       "noMaxCondition": false,
+       "type": "itemQuality",
+       "quality": {
+        "id": "heatsource",
+        "amount": 0.1
+       }
+      },
+      {
+       "minimumCondition": 50,
+       "destroyItem": true,
+       "noMaxCondition": false,
+       "type": "liquid",
+       "id": "groundwater"
+      }
+     ]
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0025,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 67
+   }
+  }
+ },
+ "woundglue": {
+  "id": "woundglue",
+  "localeName": "woundglue",
+  "locales": {
+   "EN": {
+    "name": "Wound glue"
+   },
+   "zh-CN": {
+    "name": "伤口粘合胶"
+   }
+  },
+  "appearance": {
+   "color": "#C9C9C9"
+  },
+  "economy": {
+   "valuePerLiter": 150
+  },
+  "properties": {
+   "healthUsable": true,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 0.75
+  },
+  "qualities": {
+   "disinfectant": 0.8
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "woundglue",
+     "amountMl": 80
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.1,
+      "valueMode": "scaled"
+     },
+     "bodyEffect": [
+      "vomit"
+     ],
+     "talk": "Bad"
+    }
+   },
+   "onHealthUse": {
+    "sound": [
+     "cream"
+    ],
+    "targetLimb": {
+     "skinHealAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.5,
+      "valueMode": "scaled"
+     },
+     "muscleHealth": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.25,
+      "valueMode": "scaled"
+     },
+     "bandageSlowAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 1.5,
+      "valueMode": "scaled"
+     },
+     "infectionAmount": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.25,
+      "valueMode": "scaled"
+     }
+    },
+    "body": {
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.125,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "assets": {
+   "sounds": [
+    "assets/sounds/Liquids_cream.ogg"
+   ]
+  },
+  "unparsedEffects": [
+   {
+    "onDrink": "(float ml, Body body) =>\n\t\t\t{\n\t\t\t\tfloat num = ml * 0.001f;\n\t\t\t\tbody.sicknessAmount += num * 100f;\n\t\t\t\tif (Random.value < ml / 80f)\n\t\t\t\t{\n\t\t\t\t\tbody.vomiter.Vomit();\n\t\t\t\t}\n\t\t\t\tbody.talker.EatBad();\n\t\t\t}"
+   },
+   {
+    "onHealthUse": "(float ml, Limb limb) =>\n\t\t\t{\n\t\t\t\tfloat num = ml / 20f;\n\t\t\t\tSound.Play(\"cream\", limb.body.transform.position);\n\t\t\t\tlimb.skinHealAmount += num * 10f;\n\t\t\t\tlimb.muscleHealth += num * 5f;\n\t\t\t\tlimb.bandageSlowAmount += num * 30f;\n\t\t\t\tlimb.infectionAmount -= num * 5f;\n\t\t\t\tlimb.SetDisinfect(300f * Mathf.Clamp01(num));\n\t\t\t\tlimb.pain *= 0.9f * Mathf.Clamp01(num);\n\t\t\t\tlimb.body.bloodViscosity += 15f * Mathf.Clamp01(num);\n\t\t\t\tlimb.body.sicknessAmount += 2.5f * num;\n\t\t\t}"
+   }
+  ],
+  "wiki": {
+   "nav": {
+    "liquid": 1
+   }
+  }
+ },
+ "urine": {
+  "id": "urine",
+  "localeName": "urine",
+  "locales": {
+   "EN": {
+    "name": "Lemonade"
+   },
+   "zh-CN": {
+    "name": "柠檬水"
+   }
+  },
+  "appearance": {
+   "color": "#FFDA54"
+  },
+  "economy": {
+   "valuePerLiter": 2
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 2
+  },
+  "qualities": {
+   "water": 0.1
+  },
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 25
+   },
+   "locales": {
+    "zh-CN": {
+     "name": "柠檬水（尿）"
+    }
+   }
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.07,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.003,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.025,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.075,
+      "valueMode": "scaled"
+     },
+     "talk": "Bad"
+    }
+   }
+  }
+ },
+ "vasopressin": {
+  "id": "vasopressin",
+  "localeName": "vasopressin",
+  "locales": {
+   "EN": {
+    "name": "Vasopressin"
+   },
+   "zh-CN": {
+    "name": "血管加压素"
+   }
+  },
+  "appearance": {
+   "color": "#FFFFFF"
+  },
+  "economy": {
+   "valuePerLiter": 150
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": true,
+   "localeFromItem": false,
+   "injectionSickness": 0
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "container",
+     "itemId": "vasopressin",
+     "amountMl": 100
+    },
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "effects": {
+   "onDrink": {
+    "body": {
+     "bloodPressureChangeFromMedicine": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.5,
+      "valueMode": "scaled"
+     }
+    }
+   },
+   "onHealthUse": {
+    "body": {
+     "bloodPressureChangeFromMedicine": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 6,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 62
+   }
+  }
+ },
+ "yogurt": {
+  "id": "yogurt",
+  "localeName": "yogurt",
+  "locales": {
+   "EN": {
+    "name": "Yogurt"
+   },
+   "zh-CN": {
+    "name": "酸奶"
+   }
+  },
+  "appearance": {
+   "color": "#D5EBF0"
+  },
+  "economy": {
+   "valuePerLiter": 26
+  },
+  "properties": {
+   "healthUsable": false,
+   "injectable": false,
+   "localeFromItem": false,
+   "injectionSickness": 1
+  },
+  "qualities": {},
+  "acquisition": {
+   "routes": [
+    {
+     "type": "miniBarrel",
+     "itemId": "minibarrel"
+    }
+   ]
+  },
+  "foodType": 0,
+  "effects": {
+   "onDrink": {
+    "body": {
+     "thirst": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.04,
+      "valueMode": "scaled"
+     },
+     "hunger": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.09,
+      "valueMode": "scaled"
+     },
+     "weightOffset": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.004,
+      "valueMode": "scaled"
+     },
+     "sicknessAmount": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.01,
+      "valueMode": "scaled"
+     },
+     "happiness": {
+      "type": "instant",
+      "action": "add",
+      "value": 0.002,
+      "valueMode": "scaled"
+     },
+     "temperature": {
+      "type": "instant",
+      "action": "subtract",
+      "value": 0.0015,
+      "valueMode": "scaled"
+     }
+    }
+   }
+  },
+  "wiki": {
+   "nav": {
+    "liquid": 70
+   }
+  }
+ }
+}

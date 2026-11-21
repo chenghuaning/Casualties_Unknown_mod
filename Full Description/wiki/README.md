@@ -43,3 +43,10 @@
 - `liquids_long_v2.json`：修正模板引用后的 74 条液体长描述（当前 Mod 使用）。
 - `liquids.json`：整理后的液体名称、颜色、交易价值、可注射/可医疗、饮用/医疗效果（按 mL 缩放）。
 - `items.sqlite` 中的 `liquids` 表：75 条。
+
+## 英文数据
+
+- `long_desc_en.json`：298 条英文物品长描述（Miraheze 英文 Wiki）。
+- `liquids_long_en.json`：70 条英文液体长描述。
+- `wiki_items.json` 增加 `long_en` / `effects_en` / `flags_en` / `desc_en`。
+- `liquids.json` 增加 `desc_en` / `full_desc_en` / `label_en`。

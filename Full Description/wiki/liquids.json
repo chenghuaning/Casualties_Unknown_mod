@@ -5,6 +5,8 @@
   "zh": "异种血液",
   "desc": "异种血液 是一种药品类液体，可注射使用，用于增加血容量，但会增加反胃与败血症进度。",
   "full_desc": "异种血液 是一种药品类液体，可注射使用，用于增加血容量，但会增加反胃与败血症进度。\n\n注射异种血液虽然会增加败血症进度，但较少。在血容量过低时用于急救未尝是一种坏选择，可还是建议制作为血液使用。",
+  "desc_en": "Alien blood is a craftable fluid. ",
+  "full_desc_en": "Alien blood is a craftable fluid. \n\nLike all fluids, it can only be held in the Inventory in a liquid container, such as a Temporary bottle or a Canteen.",
   "color": "#FFEB12",
   "valuePerLiter": 20,
   "injectable": true,
@@ -12,6 +14,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.026667,
     "unit": "",
@@ -19,6 +22,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.08,
     "unit": "",
@@ -26,6 +30,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.009333,
     "unit": "",
@@ -35,6 +40,7 @@
   "health": [
    {
     "label": "血量",
+    "label_en": "Blood volume",
     "action": "add",
     "value": 0.034667,
     "unit": "",
@@ -42,6 +48,7 @@
    },
    {
     "label": "感染性休克",
+    "label_en": "Septic shock",
     "action": "add",
     "value": 0.013333,
     "unit": "",
@@ -49,6 +56,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.026667,
     "unit": "",
@@ -66,6 +74,8 @@
   "zh": "抗抑郁药",
   "desc": "抗抑郁药 是一种药品类液体，可口服使用，用于治疗情绪值过低的情况。",
   "full_desc": "抗抑郁药 是一种药品类液体，可口服使用，用于治疗情绪值过低的情况。\n\n• 每饮用 1 mL 抗抑郁药，使体内抗抑郁药 “总量” 增加5点。\n• 每次饮用行为触发一次独立判定，有 30% 概率增加 饮用量(mL) × 1.5 点的反胃；即每 1 mL 折合 1.5 点反胃，但判定次数按“每次饮用”而非“每 mL”计算。",
+  "desc_en": "",
+  "full_desc_en": "",
   "color": "#64A185",
   "valuePerLiter": 120,
   "injectable": false,
@@ -73,6 +83,7 @@
   "drink": [
    {
     "label": "Antidepressants",
+    "label_en": "Antidepressants",
     "action": "add",
     "value": 5,
     "unit": "",
@@ -80,6 +91,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -96,6 +108,8 @@
   "zh": "抗毒血清",
   "desc": "抗毒血清 是一种药品类液体，可注射使用，用于降低毒素总量。",
   "full_desc": "抗毒血清 是一种药品类液体，可注射使用，用于降低毒素总量。",
+  "desc_en": "Antivenom is a craftable fluid. ",
+  "full_desc_en": "Antivenom is a craftable fluid. \n\nLike all fluids, it can only be held in the Inventory in a liquid container, such as a Temporary bottle or a Canteen.",
   "color": "#4DFF70",
   "valuePerLiter": 130,
   "injectable": true,
@@ -103,6 +117,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.24,
     "unit": "",
@@ -112,6 +127,7 @@
   "health": [
    {
     "label": "毒素",
+    "label_en": "venomTotal",
     "action": "subtract",
     "value": 1.2,
     "unit": "",
@@ -127,6 +143,8 @@
   "zh": "抗生素",
   "desc": "抗生素是一类液体药品，饮用以提升免疫力水平并少量降低败血症。",
   "full_desc": "抗生素是一类液体药品，饮用以提升免疫力水平并少量降低败血症。\n\n抗生素是专用 提升免疫力 的药品之一。\n\n在因肮脏而低免疫力的时候感染：\n\n• 不仅需要更多消毒液维持消毒效果，\n• 甚至可能完全无法降低感染。\n\n此时，饮用抗生素便可以有效解决以上问题。\n\n另外，附带的减少败血症效果，有时候有奇效。",
+  "desc_en": "",
+  "full_desc_en": "",
   "color": "#9E5DEC",
   "valuePerLiter": 180,
   "injectable": false,
@@ -134,6 +152,7 @@
   "drink": [
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.05,
     "unit": "",
@@ -141,6 +160,7 @@
    },
    {
     "label": "感染性休克",
+    "label_en": "Septic shock",
     "action": "subtract",
     "value": 0.25,
     "unit": "",
@@ -148,6 +168,7 @@
    },
    {
     "label": "antibioticImmunityTime",
+    "label_en": "antibioticImmunityTime",
     "action": "add",
     "value": 25,
     "unit": "",
@@ -164,6 +185,8 @@
   "zh": "抗血清",
   "desc": "抗血清是一种主要通过注射使用的药品类液体，可暂时提高免疫力，同时还能补充血容量并降低败血症进度。",
   "full_desc": "抗血清是一种主要通过注射使用的药品类液体，可暂时提高免疫力，同时还能补充血容量并降低败血症进度。",
+  "desc_en": "Antiserum is a non-craftable fluid.",
+  "full_desc_en": "Antiserum is a non-craftable fluid.\n\nAntiserum is an antibiotic, typically used to treat Infection and Sepsis.",
   "color": "#753E5D",
   "valuePerLiter": 160,
   "injectable": true,
@@ -171,6 +194,7 @@
   "drink": [
    {
     "label": "antibioticImmunityTime",
+    "label_en": "antibioticImmunityTime",
     "action": "add",
     "value": 1,
     "unit": "",
@@ -178,6 +202,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.3,
     "unit": "",
@@ -187,6 +212,7 @@
   "health": [
    {
     "label": "感染性休克",
+    "label_en": "Septic shock",
     "action": "subtract",
     "value": 0.2,
     "unit": "",
@@ -194,6 +220,7 @@
    },
    {
     "label": "血量",
+    "label_en": "Blood volume",
     "action": "add",
     "value": 0.06,
     "unit": "",
@@ -201,6 +228,7 @@
    },
    {
     "label": "antibioticImmunityTime",
+    "label_en": "antibioticImmunityTime",
     "action": "add",
     "value": 6,
     "unit": "",
@@ -216,6 +244,8 @@
   "zh": "抗辐射药",
   "desc": "抗辐射剂 是一种稀有的药物，使用一次后可在 90 秒内降低玩家受到的辐射量。若玩家服用超过 40 mL ，则会出现恶心及胸疼等不良症状。",
   "full_desc": "抗辐射剂 是一种稀有的药物，使用一次后可在 90 秒内降低玩家受到的辐射量。若玩家服用超过 40 mL ，则会出现恶心及胸疼等不良症状。\n\n由于遭遇严重辐射的情况较为罕见，抗辐射剂在大多数常规游戏流程中的实用性并不高。目前，只有辐射废土地层存在辐射危害，因此若难以避开辐射源，抗辐射剂便能派上用场。当某一地层出现 辐照 词缀时，该区域会出现核废料桶，此时抗辐射剂是很有必要的。\n\n在未植入芯片模式下，玩家无法通过医疗面板观察辐射值，而少量辐射的症状通常难以察觉。在辐射发展已经到致命阶段时，能快速降低辐射值的抗辐射剂会成为你的救命稻草。",
+  "desc_en": "Anti-rad is a non-craftable fluid.",
+  "full_desc_en": "Anti-rad is a non-craftable fluid.\n\nIt is used to treat Radiation sickness.",
   "color": "#FBC106",
   "valuePerLiter": 120,
   "injectable": false,
@@ -223,6 +253,7 @@
   "drink": [
    {
     "label": "辐射病",
+    "label_en": "Radiation sickness",
     "action": "subtract",
     "value": 0.2,
     "unit": "",
@@ -239,6 +270,8 @@
   "zh": "生化流体",
   "desc": "生化流体是一种主要用于制作的液体，可由 发光果 合成。饮用或注射都会增加疼痛并降低肌肉健康度。",
   "full_desc": "生化流体是一种主要用于制作的液体，可由 发光果 合成。饮用或注射都会增加疼痛并降低肌肉健康度。\n\n绝大多数情况下，不建议饮用或注射生化流体。",
+  "desc_en": "Bio-chem is a craftable fluid.",
+  "full_desc_en": "Bio-chem is a craftable fluid.\n\nBio-chem is by far the most used fluid in crafting.",
   "color": "#B3FF25",
   "valuePerLiter": 45,
   "injectable": true,
@@ -246,6 +279,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.4,
     "unit": "",
@@ -253,6 +287,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.1,
     "unit": "",
@@ -262,6 +297,7 @@
   "health": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 1,
     "unit": "",
@@ -277,6 +313,8 @@
   "zh": "胺碘酮",
   "desc": "胺碘酮 是一种药品类液体，可以注射使用，用于恢复心率，但会轻微减少头部和躯干的肌肉健康度。",
   "full_desc": "胺碘酮 是一种药品类液体，可以注射使用，用于恢复心率，但会轻微减少头部和躯干的肌肉健康度。\n\n• 每 1 mL 提供 3 秒药效持续时间。\n• 药效期间每秒减少室颤进度 2 点，最低降至 0 。\n• 药效期间每秒减少头部、胸部、腹部肌肉健康度各 0.25 点。",
+  "desc_en": "Amiodarone is a non-craftable fluid.",
+  "full_desc_en": "Amiodarone is a non-craftable fluid.\n\nIt can be used to treat fibrillation, at the cost of muscle health.",
   "color": "#FFDCD4",
   "valuePerLiter": 185,
   "injectable": true,
@@ -284,6 +322,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -300,6 +339,8 @@
   "zh": "苹果汁",
   "desc": "苹果汁 是一种供饮用的液体，具有饮料共有的，饮用增加口渴与降低体温的效果，此外具有少量其他额外效果。",
   "full_desc": "苹果汁 是一种供饮用的液体，具有饮料共有的，饮用增加口渴与降低体温的效果，此外具有少量其他额外效果。\n\n涂抹无效果。注意注射副作用。",
+  "desc_en": "Apple juice is a non-craftable fluid that is typically used to increase Hydration and Mood.",
+  "full_desc_en": "Apple juice is a non-craftable fluid that is typically used to increase Hydration and Mood.",
   "color": "#C5FF61",
   "valuePerLiter": 14,
   "injectable": false,
@@ -307,6 +348,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -314,6 +356,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.001,
     "unit": "kg",
@@ -321,6 +364,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.003,
     "unit": "°C",
@@ -328,6 +372,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.01,
     "unit": "",
@@ -344,6 +389,8 @@
   "zh": "酒精",
   "desc": "酒精是一种可用于肢体消毒的液体，使用时会引起疼痛。",
   "full_desc": "酒精是一种可用于肢体消毒的液体，使用时会引起疼痛。",
+  "desc_en": "Alcohol is a non-craftable fluid.",
+  "full_desc_en": "Alcohol is a non-craftable fluid.\n\nAlcohol is typically used to disinfect wounds. It is also a crafting material.",
   "color": "#76E667",
   "valuePerLiter": 12,
   "injectable": false,
@@ -351,6 +398,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.075,
     "unit": "",
@@ -358,6 +406,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -365,6 +414,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.07,
     "unit": "",
@@ -374,6 +424,7 @@
   "health": [
    {
     "label": "疼痛",
+    "label_en": "Pain",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -392,6 +443,8 @@
   "zh": "咖啡",
   "desc": "咖啡 是一种功能性饮料类液体，饮用后可补充口渴，恢复精力与体力，提升情绪值，并获得精力充沛状态，但会增加大量反胃。",
   "full_desc": "咖啡 是一种功能性饮料类液体，饮用后可补充口渴，恢复精力与体力，提升情绪值，并获得精力充沛状态，但会增加大量反胃。",
+  "desc_en": "Coffee is a non-craftable fluid.",
+  "full_desc_en": "Coffee is a non-craftable fluid.\n\nIt is typically used to restore Energy, but this comes at cost of Sickness.",
   "color": "#50321E",
   "valuePerLiter": 14,
   "injectable": false,
@@ -399,6 +452,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.12,
     "unit": "",
@@ -406,6 +460,7 @@
    },
    {
     "label": "stamina",
+    "label_en": "stamina",
     "action": "add",
     "value": 0.25,
     "unit": "",
@@ -413,6 +468,7 @@
    },
    {
     "label": "能量",
+    "label_en": "Energy",
     "action": "add",
     "value": 0.15,
     "unit": "",
@@ -420,6 +476,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.15,
     "unit": "",
@@ -427,6 +484,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.025,
     "unit": "",
@@ -434,6 +492,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.001,
     "unit": "kg",
@@ -441,6 +500,7 @@
    },
    {
     "label": "咖啡因",
+    "label_en": "caffeinated",
     "action": "add",
     "value": 3.5,
     "unit": "",
@@ -459,6 +519,8 @@
   "zh": "增脑剂",
   "desc": "增脑剂 是一种药品类液体，可口服使用，用于恢复脑组织完整度、治疗中风，但会降低情绪值，并增加大量反胃，使用后会获得神经快速再生症状态。",
   "full_desc": "增脑剂 是一种药品类液体，可口服使用，用于恢复脑组织完整度、治疗中风，但会降低情绪值，并增加大量反胃，使用后会获得神经快速再生症状态。\n\n饮用增脑剂时，立即产生以下一次性效果：\n• 情绪值 -0.25/mL\n• 反胃 +1/mL\n• 呕吐概率：+2.5%/mL（剂量越大，概率越高）\n• 设置神经快速再生症值 60 点 * 使用量 ，该值随时间缓慢衰减。\n\n随后进入持续 100 秒的脑部强化阶段。药效会立即触发第一次，之后每隔 1 秒触发一次，持续 100 秒。\n\n在每次触发时：\n• 脑组织完整度 +0.005（每 1 mL 总计 +0.5）\n• 中风 -1.5（固定值）",
+  "desc_en": "Braingrow is a non-craftable fluid. ",
+  "full_desc_en": "Braingrow is a non-craftable fluid. \n\nBraingrow is typically used to treat brain damage. It is also a crafting material.\n\nLike all fluids, it can only be held in the Inventory in a fluid container, such as a Temporary bottle or a Canteen.",
   "color": "#C0535E",
   "valuePerLiter": 500,
   "injectable": false,
@@ -466,6 +528,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 1,
     "unit": "",
@@ -482,6 +545,8 @@
   "zh": "头孢曲松",
   "desc": "头孢曲松 是一种药品类液体，注射体内后可以临时强制增加 70% 免疫力，按注射剂量决定生效时长。",
   "full_desc": "头孢曲松 是一种药品类液体，注射体内后可以临时强制增加 70% 免疫力，按注射剂量决定生效时长。",
+  "desc_en": "Ceftriaxone is a non-craftable fluid. It is an antibiotic that increases your immunity, which helps with Infections.",
+  "full_desc_en": "Ceftriaxone is a non-craftable fluid. It is an antibiotic that increases your immunity, which helps with Infections.",
   "color": "#46CF30",
   "valuePerLiter": 170,
   "injectable": true,
@@ -490,6 +555,7 @@
   "health": [
    {
     "label": "antibioticImmunityTime",
+    "label_en": "antibioticImmunityTime",
     "action": "add",
     "value": 11.25,
     "unit": "",
@@ -497,6 +563,7 @@
    },
    {
     "label": "疼痛",
+    "label_en": "Pain",
     "action": "add",
     "value": 0.8,
     "unit": "",
@@ -514,6 +581,8 @@
   "zh": "巧克力牛奶",
   "desc": "巧克力牛奶 是一种供饮用的液体，具有饮料共有的，饮用增加口渴与降低体温的效果，此外具有少量其他额外效果。",
   "full_desc": "巧克力牛奶 是一种供饮用的液体，具有饮料共有的，饮用增加口渴与降低体温的效果，此外具有少量其他额外效果。\n\n注意饮用带来的大量反胃程度副作用，建议在反胃程度较低或为零时饮用。\n\n涂抹无效果。注射有副作用。",
+  "desc_en": "Chocolate milk is a non-craftable fluid that satisfies Thirst and boosts Mood at the cost of causing Sickness.",
+  "full_desc_en": "Chocolate milk is a non-craftable fluid that satisfies Thirst and boosts Mood at the cost of causing Sickness.",
   "color": "#8F5C37",
   "valuePerLiter": 10,
   "injectable": false,
@@ -521,6 +590,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -528,6 +598,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.025,
     "unit": "",
@@ -535,6 +606,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.003,
     "unit": "kg",
@@ -542,6 +614,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.01,
     "unit": "",
@@ -549,6 +622,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -556,6 +630,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.12,
     "unit": "",
@@ -574,6 +649,8 @@
   "zh": "氯仿",
   "desc": "氯仿 是一种仅在 迷你桶 中生成的液体。",
   "full_desc": "氯仿 是一种仅在 迷你桶 中生成的液体。\n\n饮用后会降低意识清醒度：\n\n• 每 1 mL 提供 1.8 秒药效\n• * 药效立即触发一次，此后每隔 1 秒触发一次\n• * 每次使意识清醒度降低 8 点，最低降至 0。\n\n当意识清醒度降至 30 点或以下时，角色将失去意识。",
+  "desc_en": "Chloroform is a non-craftable fluid.",
+  "full_desc_en": "Chloroform is a non-craftable fluid.\n\nChloroform can be used to induce unconsciousness.",
   "color": "#BAD1A7",
   "valuePerLiter": 12,
   "injectable": true,
@@ -589,6 +666,8 @@
   "zh": "污水",
   "desc": "污水 是一种饮料类液体，具有液体共有的，增加中等口渴与降低体温的效果。",
   "full_desc": "污水 是一种饮料类液体，具有液体共有的，增加中等口渴与降低体温的效果。\n\n每次饮用将导致降低1点情绪值，并按饮用量随机增加反胃程度，每 1 ml 折合 0.06～0.08 点，饮用100ml 则折合为约6～8点。\n\n饮用时，若手持槽持有 过滤吸管，将避免副作用，不会降低情绪值与增加反胃程度，但尽管如此，增加的口渴值也仍低于饮用干净水。\n\n涂抹无效果，注射有副作用。",
+  "desc_en": "Dirty Water is a tile fluid.",
+  "full_desc_en": "Dirty Water is a tile fluid.\n\nIt primarily exists to punish bad hygiene, but can also be used in recipes for its water quality.",
   "color": "#997E43",
   "valuePerLiter": 0,
   "injectable": false,
@@ -596,6 +675,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.06,
     "unit": "",
@@ -603,6 +683,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -621,6 +702,8 @@
   "zh": "漂白剂",
   "desc": "漂白剂是一种可用于肢体消毒、降低感染进度的液体，但外用时会增加疼痛并损伤肌肉健康度，饮用则会造成严重的损害。\n• 因为使用漂白剂给肢体消毒会产生不小的副作用，所以不建议直接使用。但由于它拥有性质，因此建议制作为消毒绷带或L.R.D.血清使用。",
   "full_desc": "漂白剂是一种可用于肢体消毒、降低感染进度的液体，但外用时会增加疼痛并损伤肌肉健康度，饮用则会造成严重的损害。\n• 因为使用漂白剂给肢体消毒会产生不小的副作用，所以不建议直接使用。但由于它拥有性质，因此建议制作为消毒绷带或L.R.D.血清使用。",
+  "desc_en": "Bleach is a non-craftable fluid.",
+  "full_desc_en": "Bleach is a non-craftable fluid.\n\nBleach is typically used to disinfect wounds. It is also a crafting material.",
   "color": "#FFFFFF",
   "valuePerLiter": 6,
   "injectable": false,
@@ -628,6 +711,7 @@
   "drink": [
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.05,
     "unit": "",
@@ -635,6 +719,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.3,
     "unit": "",
@@ -644,6 +729,7 @@
   "health": [
    {
     "label": "疼痛",
+    "label_en": "Pain",
     "action": "add",
     "value": 0.25,
     "unit": "",
@@ -651,6 +737,7 @@
    },
    {
     "label": "肌肉健康",
+    "label_en": "Muscle health",
     "action": "subtract",
     "value": 0.15,
     "unit": "",
@@ -658,6 +745,7 @@
    },
    {
     "label": "皮肤治疗",
+    "label_en": "skinHealAmount",
     "action": "subtract",
     "value": 0.2,
     "unit": "",
@@ -665,6 +753,7 @@
    },
    {
     "label": "infectionAmount",
+    "label_en": "infectionAmount",
     "action": "subtract",
     "value": 0.05,
     "unit": "",
@@ -682,6 +771,8 @@
   "zh": "碳酸水",
   "desc": "碳酸水 是一种饮料类液体，饮用后可补充口渴，增加少量情绪值，且触发打嗝音效。",
   "full_desc": "碳酸水 是一种饮料类液体，饮用后可补充口渴，增加少量情绪值，且触发打嗝音效。",
+  "desc_en": "Carbonated water is a non-craftable fluid that is typically used to satisfy thirst and increase mood.",
+  "full_desc_en": "Carbonated water is a non-craftable fluid that is typically used to satisfy thirst and increase mood.",
   "color": "#66A6FF",
   "valuePerLiter": 17,
   "injectable": false,
@@ -689,6 +780,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -696,6 +788,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.008,
     "unit": "",
@@ -703,6 +796,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -721,6 +815,8 @@
   "zh": "血液",
   "desc": "血液 是一种药品类液体，可注射使用，用于补充血容量。",
   "full_desc": "血液 是一种药品类液体，可注射使用，用于补充血容量。",
+  "desc_en": "The liquid that flows through the player character's veins.",
+  "full_desc_en": "The liquid that flows through the player character's veins.\n\nBlood is typically used to restore blood volume. It is also a crafting material.",
   "color": "#FFC900",
   "valuePerLiter": 20,
   "injectable": true,
@@ -728,6 +824,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.026667,
     "unit": "",
@@ -735,6 +832,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.08,
     "unit": "",
@@ -742,6 +840,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.009333,
     "unit": "",
@@ -751,6 +850,7 @@
   "health": [
    {
     "label": "血量",
+    "label_en": "Blood volume",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -768,6 +868,8 @@
   "zh": "谷物粥",
   "desc": "谷物粥是一种液体食物，具有良好的体重增加值，与比例不错的水分饥饿值，适合长期食用。",
   "full_desc": "谷物粥是一种液体食物，具有良好的体重增加值，与比例不错的水分饥饿值，适合长期食用。\n\n可以通过制作谷物碗大量获取，且自带容器。",
+  "desc_en": "Cereal mix is a craftable fluid.",
+  "full_desc_en": "Cereal mix is a craftable fluid.\n\nThe liquid itself cannot be crafted directly; you must craft Bowl of cereal which contains the Cereal mix liquid.",
   "color": "#FFDB9C",
   "valuePerLiter": 20,
   "injectable": false,
@@ -775,6 +877,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.075,
     "unit": "",
@@ -782,6 +885,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.06,
     "unit": "",
@@ -789,6 +893,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.004,
     "unit": "kg",
@@ -796,6 +901,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -803,6 +909,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.015,
     "unit": "",
@@ -819,6 +926,8 @@
   "zh": "冰激凌",
   "desc": "冰激凌 是一种供饮用的液体，具有饮料的效果，但是其饮用能增加中量饥饿与口渴与少量其他属性，并且提供一段时间内 明显降低核心体温 的效果，是降低体温的方法之一。",
   "full_desc": "冰激凌 是一种供饮用的液体，具有饮料的效果，但是其饮用能增加中量饥饿与口渴与少量其他属性，并且提供一段时间内 明显降低核心体温 的效果，是降低体温的方法之一。\n\n饮用冰激凌后，降温效果不会立刻全部生效，而是会在一定时间内逐步降低体温：\n• 固定 15 秒，每秒降低0.2 °C，总降温量约3 °C",
+  "desc_en": "Ice cream is a non-craftable fluid.",
+  "full_desc_en": "Ice cream is a non-craftable fluid.\n\nIt can be used to decrease your body temperature, but it also satisfies some Hunger and Thirst.",
   "color": "#EDFFBD",
   "valuePerLiter": 26,
   "injectable": false,
@@ -826,6 +935,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.06,
     "unit": "",
@@ -833,6 +943,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.06,
     "unit": "",
@@ -840,6 +951,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.012,
     "unit": "kg",
@@ -847,6 +959,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.015,
     "unit": "",
@@ -854,6 +967,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.015,
     "unit": "",
@@ -872,6 +986,8 @@
   "zh": "医用级兴奋剂",
   "desc": "是最安全的兴奋剂，口服或注射皆可使用，提供多种强力效果，可见于 战斗注射笔 及 迷你桶 中。",
   "full_desc": "是最安全的兴奋剂，口服或注射皆可使用，提供多种强力效果，可见于 战斗注射笔 及 迷你桶 中。",
+  "desc_en": "Medical-grade stimulant is a non-craftable fluid.",
+  "full_desc_en": "Medical-grade stimulant is a non-craftable fluid.\n\nIt is a drug that provides powerful buffs to endurance, mobility and offense. When used irresponsibly it can cause a crash or even overdose.\n\nStimulants are typically used in life-threatening scenarios to enable escape or aid in combat.",
   "color": "#FFFFFF",
   "valuePerLiter": 32,
   "injectable": true,
@@ -887,6 +1003,8 @@
   "zh": "地下水",
   "desc": "生水 是一种液体，其对应的世界流体为 。",
   "full_desc": "生水 是一种液体，其对应的世界流体为 。\n\n除右侧信息栏中数据外，饮用时若手中未持有 过滤吸管 ，饮用时将减少 0.5 点基本情绪值，并有 50% 的概率增加 7~15 点反胃，这两条与饮用量的多少无关。",
+  "desc_en": "Groundwater is a tile fluid that naturally appears in all layers.",
+  "full_desc_en": "Groundwater is a tile fluid that naturally appears in all layers.\n\nIt can be used to satisfy Thirst at the cost of minor Sickness, as well as loss of Mood.\n\nIt is primarily used to craft Clean water, but is also usable in recipes requiring water crafting quality.",
   "color": "#598AD4",
   "valuePerLiter": 4,
   "injectable": false,
@@ -894,6 +1012,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.08,
     "unit": "",
@@ -901,6 +1020,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -919,6 +1039,8 @@
   "zh": "海洛因",
   "desc": "海洛因 是一种药品类液体，口服或注射使用，可用于增加阿片类药物水平，减少疼痛，但会有增加反胃的副作用。",
   "full_desc": "海洛因 是一种药品类液体，口服或注射使用，可用于增加阿片类药物水平，减少疼痛，但会有增加反胃的副作用。",
+  "desc_en": "Heroin is a non-craftable fluid. ",
+  "full_desc_en": "Heroin is a non-craftable fluid. \n\nHeroin is an opiate, typically used to treat pain. However, being a moderately potent opioid, even small injections can quickly cause overdose.",
   "color": "#EBEBEB",
   "valuePerLiter": 140,
   "injectable": true,
@@ -926,6 +1048,7 @@
   "drink": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 0.6,
     "unit": "",
@@ -933,6 +1056,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.25,
     "unit": "",
@@ -942,6 +1066,7 @@
   "health": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 1.3,
     "unit": "",
@@ -949,6 +1074,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.5,
     "unit": "",
@@ -966,6 +1092,8 @@
   "zh": "消毒剂",
   "desc": "消毒剂 是一种药品类液体，可涂抹或喷洒到肢体使用，用于降低感染。",
   "full_desc": "消毒剂 是一种药品类液体，可涂抹或喷洒到肢体使用，用于降低感染。\n\n将消毒剂涂抹在肢体上，可使该肢体进入消毒状态，同时引起疼痛。一次使用 10 mL，可将剩余消毒时间补至 240 秒，并增加 10 点疼痛。用量不足 10 mL 时，两项效果按比例减少；超过 10 mL 时，仍按 10 mL 计算。\n\n再次涂抹时，消毒时间取本次用量对应的时长与已有剩余时间中的较长者。例如，剩余 60 秒时涂抹 5 mL，消毒时间会补至 120 秒。上述时长适用于1 倍感染速率。",
+  "desc_en": "Antiseptic is a craftable fluid.",
+  "full_desc_en": "Antiseptic is a craftable fluid.\n\nAntiseptic is typically used to disinfect wounds. It's often the go-to option, as it's fairly cheap to craft.",
   "color": "#C8FFFF",
   "valuePerLiter": 55,
   "injectable": false,
@@ -973,6 +1101,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -980,6 +1109,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.15,
     "unit": "",
@@ -998,6 +1128,8 @@
   "zh": "肾上腺素",
   "desc": "肾上腺素 是一种药品类液体，可口服或注射使用，可用于迅速提升角色的肾上腺素水平，在心脏骤停时有一定概率恢复心跳，但过量使用可能引发室颤。",
   "full_desc": "肾上腺素 是一种药品类液体，可口服或注射使用，可用于迅速提升角色的肾上腺素水平，在心脏骤停时有一定概率恢复心跳，但过量使用可能引发室颤。\n\n• 注射每 1 mL 提供 6 秒效果持续时间，口服每 1 mL 提供 1 秒效果持续时间。\n• 效果持续期间内肾上腺素水平每秒强制保持为100。\n• 若角色存活且处于心脏骤停状态，效果持续时间内每秒有5%概率恢复心跳（心率设为 200 ，室颤进度设为 50 ）。\n• 若总持续时间超过 240 秒（即注射剂量超过 40 mL，口服剂量超过 240 mL），会强制引发室颤。",
+  "desc_en": "Epinephrine is a non-craftable fluid.",
+  "full_desc_en": "Epinephrine is a non-craftable fluid.\n\nIt increases adrenaline and treats cardiac arrest, but can also cause fibrillation if overused.",
   "color": "#A1FFE9",
   "valuePerLiter": 80,
   "injectable": true,
@@ -1013,6 +1145,8 @@
   "zh": "能量饮料",
   "desc": "能量饮料 是一种功能性饮料类液体，饮用后可补充口渴，恢复精力与体力，提升情绪值，并获得精力充沛状态，但会增加大量反胃。",
   "full_desc": "能量饮料 是一种功能性饮料类液体，饮用后可补充口渴，恢复精力与体力，提升情绪值，并获得精力充沛状态，但会增加大量反胃。",
+  "desc_en": "Energy drink is a non-craftable fluid.",
+  "full_desc_en": "Energy drink is a non-craftable fluid.\n\nIt is typically used to restore Energy at cost of a lot of Sickness.",
   "color": "#BB00FF",
   "valuePerLiter": 20,
   "injectable": false,
@@ -1020,6 +1154,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -1027,6 +1162,7 @@
    },
    {
     "label": "stamina",
+    "label_en": "stamina",
     "action": "add",
     "value": 0.25,
     "unit": "",
@@ -1034,6 +1170,7 @@
    },
    {
     "label": "能量",
+    "label_en": "Energy",
     "action": "add",
     "value": 0.2,
     "unit": "",
@@ -1041,6 +1178,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.2,
     "unit": "",
@@ -1048,6 +1186,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.025,
     "unit": "",
@@ -1055,6 +1194,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.004,
     "unit": "kg",
@@ -1062,6 +1202,7 @@
    },
    {
     "label": "咖啡因",
+    "label_en": "caffeinated",
     "action": "add",
     "value": 4,
     "unit": "",
@@ -1080,6 +1221,8 @@
   "zh": "脂肪",
   "desc": "脂肪 是一种可合成的液体，每 1 mL 具有 性质。",
   "full_desc": "脂肪 是一种可合成的液体，每 1 mL 具有 性质。\n\n可以通过相关制作获取大量饥饿值。",
+  "desc_en": "Fat is a craftable fluid.",
+  "full_desc_en": "Fat is a craftable fluid.\n\nIt can also be crafted into Soap (liquid), Soup (liquid), and Pemmican.",
   "color": "#D1BE3F",
   "valuePerLiter": 14,
   "injectable": false,
@@ -1087,6 +1230,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -1094,6 +1238,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -1101,6 +1246,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.008,
     "unit": "kg",
@@ -1108,6 +1254,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.005,
     "unit": "",
@@ -1115,6 +1262,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -1133,6 +1281,8 @@
   "zh": "芬太尼",
   "desc": "芬太尼 是一种药品类液体，口服或注射使用，可用于增加阿片类药物水平，减少疼痛，但极易导致过量，常用于作为合成材料或交易物品使用。",
   "full_desc": "芬太尼 是一种药品类液体，口服或注射使用，可用于增加阿片类药物水平，减少疼痛，但极易导致过量，常用于作为合成材料或交易物品使用。",
+  "desc_en": "Fentanyl is a craftable fluid. ",
+  "full_desc_en": "Fentanyl is a craftable fluid. \n\nIt is an opiate, typically used for crafting or trading due to its extremely high weight efficiency. While it can be used as a painkiller, great care must be taken in its application to avoid a deadly overdose.",
   "color": "#57F2FF",
   "valuePerLiter": 2000,
   "injectable": true,
@@ -1140,6 +1290,7 @@
   "drink": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 40,
     "unit": "",
@@ -1149,6 +1300,7 @@
   "health": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 42,
     "unit": "",
@@ -1166,6 +1318,8 @@
   "zh": "辣酱",
   "desc": "辣酱 是一种仅在 迷你桶 中生成的液体，每 1 mL 具有 性质。\n饮用辣酱会有持续升高体温的作用。与使用量无关，每饮用一次提供 45 秒的升温效果，每秒生效一次：当体温低于41度时，升高0.2度。多次饮用会叠加生效时间。",
   "full_desc": "辣酱 是一种仅在 迷你桶 中生成的液体，每 1 mL 具有 性质。\n饮用辣酱会有持续升高体温的作用。与使用量无关，每饮用一次提供 45 秒的升温效果，每秒生效一次：当体温低于41度时，升高0.2度。多次饮用会叠加生效时间。",
+  "desc_en": "Hot sauce is a non-craftable fluid.",
+  "full_desc_en": "Hot sauce is a non-craftable fluid.\n\nIt can be used to increase your body temperature, but it also satisfies some Hunger and Thirst.",
   "color": "#FF0000",
   "valuePerLiter": 14,
   "injectable": false,
@@ -1173,6 +1327,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -1180,6 +1335,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -1187,6 +1343,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.02,
     "unit": "kg",
@@ -1194,6 +1351,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.03,
     "unit": "",
@@ -1212,6 +1370,8 @@
   "zh": "L.R.D.血清",
   "desc": "L.R.D.血清 是一种特殊的液体，需要绑定 局部复苏装置 以及 简易局部复苏装置 使用。\n使用时，会根据使用容器产生不一样的效果，具体效果请移步至对应物品的页面。",
   "full_desc": "L.R.D.血清 是一种特殊的液体，需要绑定 局部复苏装置 以及 简易局部复苏装置 使用。\n使用时，会根据使用容器产生不一样的效果，具体效果请移步至对应物品的页面。\n\n正确使用时（通过 局部复苏装置 或 简易局部复苏装置 使用）：\n• 恢复肌肉健康度；\n• 减少少量出血；\n• 减少毒素；\n• 减少内出血；\n• 提供大量消毒效果；\n• 以及其他效果，具体效果需查看使用容器。\n如果未正确使用则则只会增加少量反胃程度。\n\nL.R.D.血清作为能够高效恢复肌肉健康度的消耗品，不仅可以被合成，而且效率与性价比极高。",
+  "desc_en": "L.R.D. Serum is a craftable fluid. ",
+  "full_desc_en": "L.R.D. Serum is a craftable fluid. \n\nIt is a special fluid that is only effective when used with the L.R.D. or Makeshift L.R.D.",
   "color": "#D4CB87",
   "valuePerLiter": 120,
   "injectable": false,
@@ -1219,6 +1379,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -1235,6 +1396,8 @@
   "zh": "冰茶",
   "desc": "冰茶 是一种供饮用的液体，具有饮料共有的，饮用增加口渴与降低体温的效果，此外具有增加少量情绪、体重的效果，但有少量增加反胃程度的副作用。",
   "full_desc": "冰茶 是一种供饮用的液体，具有饮料共有的，饮用增加口渴与降低体温的效果，此外具有增加少量情绪、体重的效果，但有少量增加反胃程度的副作用。\n\n涂抹无效果。注射有副作用。",
+  "desc_en": "Iced tea is a non-craftable fluid.",
+  "full_desc_en": "Iced tea is a non-craftable fluid.\n\nIt is typically used to increase Hydration and Mood, but this comes at the cost of some Sickness.",
   "color": "#FA8734",
   "valuePerLiter": 12,
   "injectable": false,
@@ -1242,6 +1405,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -1249,6 +1413,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.004,
     "unit": "kg",
@@ -1256,6 +1421,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.003,
     "unit": "°C",
@@ -1263,6 +1429,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.014,
     "unit": "",
@@ -1270,6 +1437,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.035,
     "unit": "",
@@ -1288,6 +1456,8 @@
   "zh": "杂牌兴奋剂",
   "desc": "液体名称 是一种功能性药品类液体，可口服或注射使用，用于快速增加精力、意识清醒度和体力，提高体温，持续增加肾上腺素水平，并提高移动能力。但存在持续增加反胃的副作用与药效结束时昏迷的问题。过量使用会造成严重副作用。",
   "full_desc": "液体名称 是一种功能性药品类液体，可口服或注射使用，用于快速增加精力、意识清醒度和体力，提高体温，持续增加肾上腺素水平，并提高移动能力。但存在持续增加反胃的副作用与药效结束时昏迷的问题。过量使用会造成严重副作用。",
+  "desc_en": "Off-brand stimulant is a non-craftable fluid.",
+  "full_desc_en": "Off-brand stimulant is a non-craftable fluid.\n\nIt is a drug that provides powerful buffs to endurance, mobility and offense. When used irresponsibly it can cause a crash or even overdose.\n\nStimulants are typically used in life-threatening scenarios to enable escape or aid in combat.",
   "color": "#909090",
   "valuePerLiter": 20,
   "injectable": true,
@@ -1295,6 +1465,7 @@
   "drink": [
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.015,
     "unit": "",
@@ -1311,6 +1482,8 @@
   "zh": "柠檬水",
   "desc": "柠檬水 是一种饮料类液体，饮用可补充口渴，并提高情绪值。",
   "full_desc": "柠檬水 是一种饮料类液体，饮用可补充口渴，并提高情绪值。",
+  "desc_en": "",
+  "full_desc_en": "",
   "color": "#FFF761",
   "valuePerLiter": 14,
   "injectable": false,
@@ -1318,6 +1491,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -1325,6 +1499,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.002,
     "unit": "kg",
@@ -1332,6 +1507,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.003,
     "unit": "°C",
@@ -1339,6 +1515,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.012,
     "unit": "",
@@ -1357,6 +1534,8 @@
   "zh": "汞",
   "desc": "汞 是一种少见的液体，饮用后可减少血液黏稠度，但会降低脑组织完整度、情绪值，增加反胃。",
   "full_desc": "汞 是一种少见的液体，饮用后可减少血液黏稠度，但会降低脑组织完整度、情绪值，增加反胃。",
+  "desc_en": "Mercury is a non-craftable fluid.",
+  "full_desc_en": "Mercury is a non-craftable fluid.\n\nIt is most notable for being (almost) completely useless.",
   "color": "#4D4D4D",
   "valuePerLiter": 8,
   "injectable": false,
@@ -1364,6 +1543,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.25,
     "unit": "",
@@ -1371,6 +1551,7 @@
    },
    {
     "label": "血液黏度",
+    "label_en": "Blood viscosity",
     "action": "subtract",
     "value": 0.2,
     "unit": "",
@@ -1378,6 +1559,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.04,
     "unit": "",
@@ -1385,6 +1567,7 @@
    },
    {
     "label": "brainHealth",
+    "label_en": "brainHealth",
     "action": "subtract",
     "value": 0.05,
     "unit": "",
@@ -1401,6 +1584,8 @@
   "zh": "烈性兴奋剂",
   "desc": "烈性兴奋剂 是一种功能性药品类液体，可注射使用，用于快速增加精力、意识清醒度和体力，持续增加肾上腺素水平，并提高移动能力。但存在持续增加内出血与反胃的副作用，过量使用会引发剧烈颤抖、精力骤降、内出血加剧，甚至昏迷和脑组织完整度下降。",
   "full_desc": "烈性兴奋剂 是一种功能性药品类液体，可注射使用，用于快速增加精力、意识清醒度和体力，持续增加肾上腺素水平，并提高移动能力。但存在持续增加内出血与反胃的副作用，过量使用会引发剧烈颤抖、精力骤降、内出血加剧，甚至昏迷和脑组织完整度下降。",
+  "desc_en": "Hard stimulant is a non-craftable fluid.",
+  "full_desc_en": "Hard stimulant is a non-craftable fluid.\n\nIt is a drug that provides powerful buffs to endurance, mobility and offense. When used irresponsibly it can cause a crash or even overdose.\n\nStimulants are typically used in life-threatening scenarios to enable escape or aid in combat.",
   "color": "#D1D1D1",
   "valuePerLiter": 24,
   "injectable": true,
@@ -1408,6 +1593,7 @@
   "drink": [
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.02,
     "unit": "",
@@ -1415,6 +1601,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -1424,6 +1611,7 @@
   "health": [
    {
     "label": "stamina",
+    "label_en": "stamina",
     "action": "add",
     "value": 2,
     "unit": "",
@@ -1431,6 +1619,7 @@
    },
    {
     "label": "意识",
+    "label_en": "Consciousness",
     "action": "add",
     "value": 2,
     "unit": "",
@@ -1438,6 +1627,7 @@
    },
    {
     "label": "能量",
+    "label_en": "Energy",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -1445,6 +1635,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -1452,6 +1643,7 @@
    },
    {
     "label": "内出血",
+    "label_en": "Internal bleeding",
     "action": "add",
     "value": 0.06,
     "unit": "",
@@ -1459,6 +1651,7 @@
    },
    {
     "label": "肾上腺素",
+    "label_en": "Adrenaline",
     "action": "add",
     "value": 7,
     "unit": "",
@@ -1474,6 +1667,8 @@
   "zh": "番茄酱",
   "desc": "番茄酱 是一种食物类液体，每 1 mL 具有 性质，饮用后可补充饥饿与微量口渴，但会增加反胃。",
   "full_desc": "番茄酱 是一种食物类液体，每 1 mL 具有 性质，饮用后可补充饥饿与微量口渴，但会增加反胃。",
+  "desc_en": "Ketchup is a non-craftable fluid.",
+  "full_desc_en": "Ketchup is a non-craftable fluid.\n\nIt is typically used for its Condiment crafting quality, to craft Burger.",
   "color": "#FF2B2B",
   "valuePerLiter": 18,
   "injectable": false,
@@ -1481,6 +1676,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.06,
     "unit": "",
@@ -1488,6 +1684,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.08,
     "unit": "",
@@ -1495,6 +1692,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.01,
     "unit": "kg",
@@ -1502,6 +1700,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -1509,6 +1708,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.025,
     "unit": "",
@@ -1527,6 +1727,8 @@
   "zh": "荧光藻",
   "desc": "荧光藻 是一种饮料类液体，饮用后可以补充口渴值和少量饥饿值。",
   "full_desc": "荧光藻 是一种饮料类液体，饮用后可以补充口渴值和少量饥饿值。\n\n每次饮用还会产生以下效果：\n• 基本情绪值降低 1 点。\n• 有 65% 的概率增加反胃\n• * 每 100 mL 随机增加 6～8.5 点\n• * 当前选中的操作手持有过滤吸管时，反胃增加量降为原来的 30%。\n• 当前选中的操作手未持有过滤吸管时，有 10% 的概率直接引起呕吐。\n\n荧光藻可用于制作生化流体。",
+  "desc_en": "Lumalgae is a tile fluid.",
+  "full_desc_en": "Lumalgae is a tile fluid.\n\nIt is highly buoyant and pushes entities upward, including the player. This makes it very difficult to swim downward in it.\n\nGroundwater that comes in contact with Lumalgae turns into Lumalgae.",
   "color": "#219900",
   "valuePerLiter": 2,
   "injectable": false,
@@ -1534,6 +1736,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.065,
     "unit": "",
@@ -1541,6 +1744,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.02,
     "unit": "",
@@ -1548,6 +1752,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.001,
     "unit": "kg",
@@ -1555,6 +1760,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -1562,6 +1768,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.01,
     "unit": "",
@@ -1578,6 +1785,8 @@
   "zh": "角蛋白增强剂",
   "desc": "角蛋白增强剂 是一种药品类液体，口服或注射使用，可用于恢复爪子健康度，获得加速再生状态。",
   "full_desc": "角蛋白增强剂 是一种药品类液体，口服或注射使用，可用于恢复爪子健康度，获得加速再生状态。",
+  "desc_en": "Keratin-booster is a non-craftable fluid that is typically used to treat Dulled claws.",
+  "full_desc_en": "Keratin-booster is a non-craftable fluid that is typically used to treat Dulled claws.",
   "color": "#FFD154",
   "valuePerLiter": 150,
   "injectable": true,
@@ -1585,6 +1794,7 @@
   "drink": [
    {
     "label": "clawRegrowTime",
+    "label_en": "clawRegrowTime",
     "action": "add",
     "value": 24,
     "unit": "",
@@ -1594,6 +1804,7 @@
   "health": [
    {
     "label": "clawRegrowTime",
+    "label_en": "clawRegrowTime",
     "action": "add",
     "value": 28,
     "unit": "",
@@ -1609,6 +1820,8 @@
   "zh": "局部麻醉剂",
   "desc": "",
   "full_desc": "",
+  "desc_en": "Local anesthetic is a non-craftable fluid used to treat pain.",
+  "full_desc_en": "Local anesthetic is a non-craftable fluid used to treat pain.",
   "color": "#CEBAFF",
   "valuePerLiter": 120,
   "injectable": true,
@@ -1616,6 +1829,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -1625,6 +1839,7 @@
   "health": [
    {
     "label": "疼痛",
+    "label_en": "Pain",
     "action": "set",
     "value": 0,
     "unit": "",
@@ -1642,6 +1857,8 @@
   "zh": "原油",
   "desc": "原油是一种液体，常以 的形态出现于 与 。",
   "full_desc": "原油是一种液体，常以 的形态出现于 与 。",
+  "desc_en": "Oil is a tile fluid. It obstructs the player's movement.",
+  "full_desc_en": "Oil is a tile fluid. It obstructs the player's movement.",
   "color": "#473215",
   "valuePerLiter": 1,
   "injectable": false,
@@ -1649,6 +1866,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.01,
     "unit": "",
@@ -1656,6 +1874,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.02,
     "unit": "",
@@ -1663,6 +1882,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.03,
     "unit": "kg",
@@ -1670,6 +1890,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 3,
     "unit": "",
@@ -1677,6 +1898,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.3,
     "unit": "",
@@ -1693,6 +1915,8 @@
   "zh": "吗啡",
   "desc": "吗啡 是一种药品类液体，口服或注射使用。可用于增加阿片类药物水平，以此减少疼痛。",
   "full_desc": "吗啡 是一种药品类液体，口服或注射使用。可用于增加阿片类药物水平，以此减少疼痛。\n\n虽然吗啡口服效果减半，但是其不易导致阿片过量，是效益与安全性居中的阿片类药物。",
+  "desc_en": "Morphine is a craftable fluid.",
+  "full_desc_en": "Morphine is a craftable fluid.\n\nIt is typically used to treat Pain.",
   "color": "#967B5F",
   "valuePerLiter": 110,
   "injectable": true,
@@ -1700,6 +1924,7 @@
   "drink": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 0.4,
     "unit": "",
@@ -1709,6 +1934,7 @@
   "health": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 0.9,
     "unit": "",
@@ -1726,6 +1952,8 @@
   "zh": "橄榄油",
   "desc": "橄榄油 是一种无法合成的液体，每 1 mL 具有 性质。",
   "full_desc": "橄榄油 是一种无法合成的液体，每 1 mL 具有 性质。",
+  "desc_en": "Olive oil is a non-craftable fluid.",
+  "full_desc_en": "Olive oil is a non-craftable fluid.\n\nIt is typically used for its Fat Crafting quality.",
   "color": "#818707",
   "valuePerLiter": 14,
   "injectable": false,
@@ -1733,6 +1961,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.03,
     "unit": "",
@@ -1740,6 +1969,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.08,
     "unit": "",
@@ -1747,6 +1977,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.02,
     "unit": "kg",
@@ -1754,6 +1985,7 @@
    },
    {
     "label": "dirtyness",
+    "label_en": "dirtyness",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -1761,6 +1993,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.12,
     "unit": "",
@@ -1768,6 +2001,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.01,
     "unit": "",
@@ -1786,6 +2020,8 @@
   "zh": "橙汁",
   "desc": "橙汁 是一种饮料类液体，饮用可补充口渴，减少反胃，但会降低情绪值。",
   "full_desc": "橙汁 是一种饮料类液体，饮用可补充口渴，减少反胃，但会降低情绪值。",
+  "desc_en": "Orange juice is a non-craftable fluid. ",
+  "full_desc_en": "Orange juice is a non-craftable fluid. \n\nIt is typically used to increase Hydration and decrease  Sickness, but this comes at the cost of Happiness.",
   "color": "#FF8929",
   "valuePerLiter": 14,
   "injectable": false,
@@ -1793,6 +2029,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -1800,6 +2037,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.0007,
     "unit": "kg",
@@ -1807,6 +2045,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.001,
     "unit": "°C",
@@ -1814,6 +2053,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.015,
     "unit": "",
@@ -1821,6 +2061,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "subtract",
     "value": 0.025,
     "unit": "",
@@ -1837,6 +2078,8 @@
   "zh": "牛奶",
   "desc": "牛奶 是一种供饮用的液体，具有饮料共有的，饮用增加口渴与降低体温的效果，此外还有少量增加饥饿值、情绪值、体重等效果，在生存中是优质的饮料。",
   "full_desc": "牛奶 是一种供饮用的液体，具有饮料共有的，饮用增加口渴与降低体温的效果，此外还有少量增加饥饿值、情绪值、体重等效果，在生存中是优质的饮料。\n\n如果从奶粉制作而来，相当于赠送一些饥饿值等属性。可以用于合成。\n\n涂抹无效果。注意注射副作用。",
+  "desc_en": "\"Milk\" could refer to:\n• Milk carton\n• Milk (liquid)\n• Powdered milk (liquid)\n• Milky",
+  "full_desc_en": "\"Milk\" could refer to:\n• Milk carton\n• Milk (liquid)\n• Powdered milk (liquid)\n• Milky",
   "color": "#FFFFFF",
   "valuePerLiter": 13,
   "injectable": false,
@@ -1844,6 +2087,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -1851,6 +2095,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.03,
     "unit": "",
@@ -1858,6 +2103,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.004,
     "unit": "kg",
@@ -1865,6 +2111,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -1872,6 +2119,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.005,
     "unit": "",
@@ -1890,6 +2138,8 @@
   "zh": "精神抹除剂",
   "desc": "精神抹除剂 是一种药品类液体，可口服使用，用于治疗严重脑组织完整度过低，但会造成极其严重的副作用，并获得永久的空洞状态。",
   "full_desc": "精神抹除剂 是一种药品类液体，可口服使用，用于治疗严重脑组织完整度过低，但会造成极其严重的副作用，并获得永久的空洞状态。",
+  "desc_en": "Mindwipe is a medical fluid container item that spawns with 30 mL of Mindwipe and 30 mL of Morphine.",
+  "full_desc_en": "Mindwipe is a medical fluid container item that spawns with 30 mL of Mindwipe and 30 mL of Morphine.\n\nIt can be used as a last-resort life-saving measure.",
   "color": "#21485E",
   "valuePerLiter": 1333,
   "injectable": false,
@@ -1905,6 +2155,8 @@
   "zh": "纳曲酮",
   "desc": "纳曲酮 是一种药品类液体，可口服使用，用于治疗阿片类药物水平过量与戒断反应。需要检测到体内有阿片类药物水平时才会生效，否则无效。",
   "full_desc": "纳曲酮 是一种药品类液体，可口服使用，用于治疗阿片类药物水平过量与戒断反应。需要检测到体内有阿片类药物水平时才会生效，否则无效。\n\n每 1 mL 纳曲酮，产生以下效果：\n\n• 增加阿片拮抗水平 0.75点。\n• 减少阿片受体耐药水平 0.75点。\n• 每秒减少1点反胃，持续 1.25 秒。\n• 降低情绪值 0.1点。\n• 0.75% 概率立即呕吐。",
+  "desc_en": "Naltrexone is a craftable fluid. ",
+  "full_desc_en": "Naltrexone is a craftable fluid. \n\nIt is used to treat sickness and opiate abuse.\n\nIt is one of the two opiate antagonist fluids in the game, the other being Naloxone.",
   "color": "#FFFFFF",
   "valuePerLiter": 100,
   "injectable": false,
@@ -1912,6 +2164,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "subtract",
     "value": 1,
     "unit": "",
@@ -1919,6 +2172,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.1,
     "unit": "",
@@ -1926,6 +2180,7 @@
    },
    {
     "label": "antagonistAmount",
+    "label_en": "antagonistAmount",
     "action": "add",
     "value": 0.75,
     "unit": "",
@@ -1933,6 +2188,7 @@
    },
    {
     "label": "opiateTolerance",
+    "label_en": "opiateTolerance",
     "action": "subtract",
     "value": 0.75,
     "unit": "",
@@ -1949,6 +2205,8 @@
   "zh": "纳洛酮",
   "desc": "纳洛酮 是一种药品类液体，可注射使用，用于治疗阿片类药物水平过量。",
   "full_desc": "纳洛酮 是一种药品类液体，可注射使用，用于治疗阿片类药物水平过量。\n\n• 每 1 mL 增加0.5点拮抗剂水平，拮抗剂水平可抵消阿片类物质的作用。",
+  "desc_en": "Naloxone is a non-craftable fluid. ",
+  "full_desc_en": "Naloxone is a non-craftable fluid. \n\nIt is one of the two opiate antagonist fluids in the game, the other being Naltrexone.",
   "color": "#E8D8BE",
   "valuePerLiter": 80,
   "injectable": true,
@@ -1957,6 +2215,7 @@
   "health": [
    {
     "label": "antagonistAmount",
+    "label_en": "antagonistAmount",
     "action": "add",
     "value": 0.5,
     "unit": "",
@@ -1972,6 +2231,8 @@
   "zh": "霉菌",
   "desc": "霉菌 是一种仅在 迷你桶 中生成的液体。",
   "full_desc": "霉菌 是一种仅在 迷你桶 中生成的液体。",
+  "desc_en": "Mold is a non-craftable fluid.",
+  "full_desc_en": "Mold is a non-craftable fluid.\n\nIt is most notable for being (almost) completely useless.",
   "color": "#3F4F32",
   "valuePerLiter": 0,
   "injectable": false,
@@ -1979,6 +2240,7 @@
   "drink": [
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.03,
     "unit": "",
@@ -1986,6 +2248,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.004,
     "unit": "kg",
@@ -1993,6 +2256,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.3,
     "unit": "",
@@ -2000,6 +2264,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.04,
     "unit": "",
@@ -2016,6 +2281,8 @@
   "zh": "鸦片",
   "desc": "鸦片是具有阿片类性质的液体，可以通过注射与饮用获得阿片类效果，鸦片是效果最小、最安全的阿片类药物，需要注射 200 mL 或饮用 400 mL 才会阿片过量。",
   "full_desc": "鸦片是具有阿片类性质的液体，可以通过注射与饮用获得阿片类效果，鸦片是效果最小、最安全的阿片类药物，需要注射 200 mL 或饮用 400 mL 才会阿片过量。\n\n同时，鸦片作为效果最差的阿片类药物，可以通过制作合成吗啡等效果更强的其他阿片类药物。具有阿片类性质，可参与阿片类相关合成。",
+  "desc_en": "Opium is a craftable fluid.",
+  "full_desc_en": "Opium is a craftable fluid.\n\nIt is typically used to treat Pain.",
   "color": "#FFEB51",
   "valuePerLiter": 100,
   "injectable": true,
@@ -2023,6 +2290,7 @@
   "drink": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 0.2,
     "unit": "",
@@ -2032,6 +2300,7 @@
   "health": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 0.4,
     "unit": "",
@@ -2049,6 +2318,8 @@
   "zh": "促凝剂",
   "desc": "促凝剂 是一种药品类液体，可口服或注射使用，用于治疗出血、内出血以及中风，但会显著增加血液黏稠度，口服效果会大幅度减少，且降低情绪值。",
   "full_desc": "促凝剂 是一种药品类液体，可口服或注射使用，用于治疗出血、内出血以及中风，但会显著增加血液黏稠度，口服效果会大幅度减少，且降低情绪值。\n\n每注射 33.34 mL 促凝剂，提供 20 秒持续药效，每口服 33.34 mL 促凝剂，提供 12 秒持续药效。\n在药效期间，每秒触发一次以下效果：\n• 内出血 x0.95\n• 血液黏稠度 +1.75\n• 中风 -10\n• 所有肢体的出血 x0.96",
+  "desc_en": "Procoagulant is a craftable fluid. It treats Bleeding and Stroke.",
+  "full_desc_en": "Procoagulant is a craftable fluid. It treats Bleeding and Stroke.",
   "color": "#BD5660",
   "valuePerLiter": 250,
   "injectable": true,
@@ -2056,6 +2327,7 @@
   "drink": [
    {
     "label": "内出血",
+    "label_en": "Internal bleeding",
     "action": "multiply",
     "value": 0.95,
     "unit": "",
@@ -2063,6 +2335,7 @@
    },
    {
     "label": "血液黏度",
+    "label_en": "Blood viscosity",
     "action": "add",
     "value": 1.75,
     "unit": "",
@@ -2070,6 +2343,7 @@
    },
    {
     "label": "strokeAmount",
+    "label_en": "strokeAmount",
     "action": "subtract",
     "value": 10,
     "unit": "",
@@ -2077,6 +2351,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.059988,
     "unit": "",
@@ -2086,6 +2361,7 @@
   "health": [
    {
     "label": "内出血",
+    "label_en": "Internal bleeding",
     "action": "multiply",
     "value": 0.95,
     "unit": "",
@@ -2093,6 +2369,7 @@
    },
    {
     "label": "血液黏度",
+    "label_en": "Blood viscosity",
     "action": "add",
     "value": 1.75,
     "unit": "",
@@ -2100,6 +2377,7 @@
    },
    {
     "label": "strokeAmount",
+    "label_en": "strokeAmount",
     "action": "subtract",
     "value": 10,
     "unit": "",
@@ -2115,6 +2393,8 @@
   "zh": "奶粉",
   "desc": "奶粉 是一种液体，但是直接饮用更像干吃，会减少大量口渴值而增加大量饥饿值，且有其他副作用。",
   "full_desc": "奶粉 是一种液体，但是直接饮用更像干吃，会减少大量口渴值而增加大量饥饿值，且有其他副作用。\n\n一般用作进一步合成为牛奶。",
+  "desc_en": "Powdered milk is a non-craftable fluid.",
+  "full_desc_en": "Powdered milk is a non-craftable fluid.\n\nIt is typically used to craft Milk.",
   "color": "#F2F2F2",
   "valuePerLiter": 26,
   "injectable": false,
@@ -2122,6 +2402,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "subtract",
     "value": 0.266667,
     "unit": "",
@@ -2129,6 +2410,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.266667,
     "unit": "",
@@ -2136,6 +2418,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.013333,
     "unit": "kg",
@@ -2143,6 +2426,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.133333,
     "unit": "",
@@ -2150,6 +2434,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.016667,
     "unit": "",
@@ -2166,6 +2451,8 @@
   "zh": "止痛药",
   "desc": "止痛药 是一种药品类液体，可口服使用，用于增加阿片类药物水平，减少疼痛。",
   "full_desc": "止痛药 是一种药品类液体，可口服使用，用于增加阿片类药物水平，减少疼痛。",
+  "desc_en": "Painkillers is a craftable fluid. ",
+  "full_desc_en": "Painkillers is a craftable fluid. \n\nPainkillers is an Opiate, typically used to treat pain.\n\nLike all fluids, it can only be held in the Inventory in a fluid container, such as a Temporary bottle or a Canteen.",
   "color": "#FFFFFF",
   "valuePerLiter": 125,
   "injectable": false,
@@ -2173,6 +2460,7 @@
   "drink": [
    {
     "label": "阿片",
+    "label_en": "opiateAmount",
     "action": "add",
     "value": 1.4,
     "unit": "",
@@ -2191,6 +2479,8 @@
   "zh": "氧脉素",
   "desc": "氧脉素 是一种药品类液体，注射使用，是高贵的无副作用、唯一直接提升血氧，且有大量心肺相关正面收益的不可合成的顶级药品类液体。",
   "full_desc": "氧脉素 是一种药品类液体，注射使用，是高贵的无副作用、唯一直接提升血氧，且有大量心肺相关正面收益的不可合成的顶级药品类液体。\n\n氧脉素提供的属性一个比一个顶级，仅就能直接提供血氧饱和度就已经是全游戏（限v7.0.1版本）唯一，更何况还有方便重伤救治的降低室颤进程、提升血容量、提升呼吸频率、提升精力值的效果，并且完全没有副作用，称之为顶级药品情理之中。\n\n注意饮用副作用。",
+  "desc_en": "Oxyline is an non-craftable fluid that is primarily used to treat low blood oxygen.",
+  "full_desc_en": "Oxyline is an non-craftable fluid that is primarily used to treat low blood oxygen.",
   "color": "#4DFFDE",
   "valuePerLiter": 80,
   "injectable": true,
@@ -2198,6 +2488,7 @@
   "drink": [
    {
     "label": "shock",
+    "label_en": "shock",
     "action": "add",
     "value": 28,
     "unit": "",
@@ -2207,6 +2498,7 @@
   "health": [
    {
     "label": "respiratoryRate",
+    "label_en": "respiratoryRate",
     "action": "add",
     "value": 2.5,
     "unit": "",
@@ -2214,6 +2506,7 @@
    },
    {
     "label": "bloodOxygen",
+    "label_en": "bloodOxygen",
     "action": "add",
     "value": 1.666,
     "unit": "",
@@ -2221,6 +2514,7 @@
    },
    {
     "label": "stamina",
+    "label_en": "stamina",
     "action": "add",
     "value": 2.5,
     "unit": "",
@@ -2228,6 +2522,7 @@
    },
    {
     "label": "fibrillationProgress",
+    "label_en": "fibrillationProgress",
     "action": "subtract",
     "value": 1.2,
     "unit": "",
@@ -2235,6 +2530,7 @@
    },
    {
     "label": "血量",
+    "label_en": "Blood volume",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -2250,6 +2546,8 @@
   "zh": "粗制果汁",
   "desc": "粗制果汁 是一种可制作的液体，在 中是重要的口渴值来源。",
   "full_desc": "粗制果汁 是一种可制作的液体，在 中是重要的口渴值来源。\n\n值得一提的是用 250 mL 粗制果汁合成 200 mL 精制果汁 后在其他属性相差不大的情况下补充的口渴值反而会减少。",
+  "desc_en": "Produce juice is a craftable fluid. ",
+  "full_desc_en": "Produce juice is a craftable fluid. \n\nIt is typically used to satisfy thirst and increase mood.\n\nIt can also be crafted into Refined juice.",
   "color": "#FFFEB5",
   "valuePerLiter": 14,
   "injectable": false,
@@ -2257,6 +2555,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.085,
     "unit": "",
@@ -2264,6 +2563,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.003,
     "unit": "°C",
@@ -2271,6 +2571,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.00025,
     "unit": "",
@@ -2278,6 +2579,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.02,
     "unit": "",
@@ -2285,6 +2587,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.002,
     "unit": "kg",
@@ -2301,6 +2604,8 @@
   "zh": "精制果汁",
   "desc": "精制果汁 是一种可制作的液体，在 中是重要的口渴值来源。",
   "full_desc": "精制果汁 是一种可制作的液体，在 中是重要的口渴值来源。\n\n值得一提的是用 250 mL 粗制果汁 合成 200 mL 精制果汁后在其他属性相差不大的情况下补充的口渴值反而会减少。",
+  "desc_en": "Refined juice is a craftable fluid. ",
+  "full_desc_en": "Refined juice is a craftable fluid. \n\nIt is typically used to satisfy thirst and increase mood.",
   "color": "#FFE173",
   "valuePerLiter": 18,
   "injectable": false,
@@ -2308,6 +2613,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.095,
     "unit": "",
@@ -2315,6 +2621,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.002,
     "unit": "°C",
@@ -2322,6 +2629,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.002,
     "unit": "",
@@ -2329,6 +2637,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.025,
     "unit": "",
@@ -2336,6 +2645,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.002,
     "unit": "kg",
@@ -2352,6 +2662,8 @@
   "zh": "红色血液",
   "desc": "红色血液 是一种药品类液体，可注射使用，用于恢复血容量，但会增加反胃、败血症值，并减少注射肢体的肌肉健康度。",
   "full_desc": "红色血液 是一种药品类液体，可注射使用，用于恢复血容量，但会增加反胃、败血症值，并减少注射肢体的肌肉健康度。\n\n红色血液常用于作为 性质的材料合成，或作为消耗品激活 。",
+  "desc_en": "Red blood is a non-craftable fluid.",
+  "full_desc_en": "Red blood is a non-craftable fluid.\n\nIt is most commonly used to unlock Bio-terminals, enabling access to valuable loot.",
   "color": "#C70A0A",
   "valuePerLiter": 18,
   "injectable": true,
@@ -2359,6 +2671,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.026667,
     "unit": "",
@@ -2366,6 +2679,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.093333,
     "unit": "",
@@ -2373,6 +2687,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.009333,
     "unit": "",
@@ -2382,6 +2697,7 @@
   "health": [
    {
     "label": "血量",
+    "label_en": "Blood volume",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -2389,6 +2705,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.066667,
     "unit": "",
@@ -2396,6 +2713,7 @@
    },
    {
     "label": "感染性休克",
+    "label_en": "Septic shock",
     "action": "add",
     "value": 0.053333,
     "unit": "",
@@ -2403,6 +2721,7 @@
    },
    {
     "label": "肌肉健康",
+    "label_en": "Muscle health",
     "action": "subtract",
     "value": 0.04,
     "unit": "",
@@ -2420,6 +2739,8 @@
   "zh": "过滤水",
   "desc": "过滤水 是基础的液体，用于安全饮用或合成中消耗。",
   "full_desc": "过滤水 是基础的液体，用于安全饮用或合成中消耗。\n\n作为基础的饮料，饮用增加口渴与降低体温，且注射、涂抹无效果。",
+  "desc_en": "",
+  "full_desc_en": "",
   "color": "#79E0DD",
   "valuePerLiter": 10,
   "injectable": false,
@@ -2427,6 +2748,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -2434,6 +2756,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.002,
     "unit": "°C",
@@ -2441,6 +2764,7 @@
    },
    {
     "label": "辐射病",
+    "label_en": "Radiation sickness",
     "action": "add",
     "value": 0.35,
     "unit": "",
@@ -2459,6 +2783,8 @@
   "zh": "镇痛膏",
   "desc": "镇痛膏是一种外用药品类液体，可减轻肢体疼痛、促进皮肤健康度恢复，并提供消毒效果。",
   "full_desc": "镇痛膏是一种外用药品类液体，可减轻肢体疼痛、促进皮肤健康度恢复，并提供消毒效果。",
+  "desc_en": "Relief cream is a craftable fluid.",
+  "full_desc_en": "Relief cream is a craftable fluid.",
   "color": "#BD5BC9",
   "valuePerLiter": 120,
   "injectable": false,
@@ -2466,6 +2792,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -2475,6 +2802,7 @@
   "health": [
    {
     "label": "皮肤治疗",
+    "label_en": "skinHealAmount",
     "action": "add",
     "value": 0.3,
     "unit": "",
@@ -2492,6 +2820,8 @@
   "zh": "猩红垢泥",
   "desc": "猩红垢泥 是一种液体，其对应的世界流体为 。",
   "full_desc": "猩红垢泥 是一种液体，其对应的世界流体为 。\n\n除右侧信息栏中的数据外，每次饮用都有 50% 的概率直接引起呕吐，与饮用量的多少无关。当前选中的操作手持有 过滤吸管 时不会因此呕吐，其余效果不变。",
+  "desc_en": "Red sludge is a tile fluid released by Pus sacks when destroyed.",
+  "full_desc_en": "Red sludge is a tile fluid released by Pus sacks when destroyed.\n\nIt provides some Thirst and Hunger at the cost of major Sickness.",
   "color": "#C92E1C",
   "valuePerLiter": 0,
   "injectable": false,
@@ -2499,6 +2829,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.03,
     "unit": "",
@@ -2506,6 +2837,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.03,
     "unit": "",
@@ -2513,6 +2845,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.01,
     "unit": "kg",
@@ -2520,6 +2853,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.05,
     "unit": "",
@@ -2527,6 +2861,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -2543,6 +2878,8 @@
   "zh": "安眠药",
   "desc": "安眠药是一种药品类液体，可口服使用，用于快速满足入睡条件。",
   "full_desc": "安眠药是一种药品类液体，可口服使用，用于快速满足入睡条件。",
+  "desc_en": "",
+  "full_desc_en": "",
   "color": "#8CA893",
   "valuePerLiter": 320,
   "injectable": false,
@@ -2558,6 +2895,8 @@
   "zh": "林格氏液",
   "desc": "林格氏液是一种用于注射增加血容量的液体，在数值上是生理盐水的下位替代，特点是减少的血液黏稠度较低。",
   "full_desc": "林格氏液是一种用于注射增加血容量的液体，在数值上是生理盐水的下位替代，特点是减少的血液黏稠度较低。",
+  "desc_en": "Ringer's solution is a non-craftable fluid.",
+  "full_desc_en": "Ringer's solution is a non-craftable fluid.\n\nIt is a blood equivalent, used to treat blood loss and thirst.",
   "color": "#EDEDED",
   "valuePerLiter": 24,
   "injectable": true,
@@ -2565,6 +2904,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.085714,
     "unit": "",
@@ -2572,6 +2912,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.034286,
     "unit": "",
@@ -2579,6 +2920,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.005714,
     "unit": "",
@@ -2588,6 +2930,7 @@
   "health": [
    {
     "label": "血量",
+    "label_en": "Blood volume",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -2595,6 +2938,7 @@
    },
    {
     "label": "血液黏度",
+    "label_en": "Blood viscosity",
     "action": "subtract",
     "value": 0.057143,
     "unit": "",
@@ -2602,6 +2946,7 @@
    },
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.085714,
     "unit": "",
@@ -2619,6 +2964,8 @@
   "zh": "树汁",
   "desc": "树汁 是一种食物类液体，饮用可补充口渴与饥饿，并提高情绪值。",
   "full_desc": "树汁 是一种食物类液体，饮用可补充口渴与饥饿，并提高情绪值。",
+  "desc_en": "Tree sap is a tile fluid that only generates in the 5th layer.",
+  "full_desc_en": "Tree sap is a tile fluid that only generates in the 5th layer.\n\nIt satisfies Thirst and Hunger at the cost of minor Sickness.",
   "color": "#F7BD34",
   "valuePerLiter": 15,
   "injectable": false,
@@ -2626,6 +2973,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -2633,6 +2981,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.045,
     "unit": "",
@@ -2640,6 +2989,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.005,
     "unit": "kg",
@@ -2647,6 +2997,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.005,
     "unit": "",
@@ -2663,6 +3014,8 @@
   "zh": "汤",
   "desc": "汤是一种食物类液体，饮用具有高额 饥饿值 与 水分值 恢复，同时提供少量直接增加情绪值与体重增加。",
   "full_desc": "汤是一种食物类液体，饮用具有高额 饥饿值 与 水分值 恢复，同时提供少量直接增加情绪值与体重增加。\n\n汤作为一种可制作的食物，其拥有大量制作优势：\n• 作为液体，不会腐坏，适合长期储存\n• 材料在 包含制作流程的生存中 极其常见\n• 如果使用啃了三口的干肉饼与过滤水制作，\n• *相当于12点饥饿值变成30点，18水分变成27点\n• *这在物资紧缺时非常重要，可以做到饥饿值与水分最大程度的利用，节省下 液体制作属性 资源\n• 如果肉类没有完全利用也不算亏\n\n综上所述， 汤 是一种在制作中特别节省资源的食物类液体。如果可能且有需要并能够储存，建议制作并用做储备粮。\n\n一次制作饮用 300 mL 可获得：\n• 直接增加3点情绪\n• 增加30点饥饿值（以及其相关效果）\n• 增加27点水分值\n• 增涨1.5点体重（约0.5公斤）",
+  "desc_en": "Soup is a craftable fluid. ",
+  "full_desc_en": "Soup is a craftable fluid. \n\nLike all fluids, it can only be held in the Inventory in a fluid container, such as a Temporary bottle or a Canteen.",
   "color": "#7D5100",
   "valuePerLiter": 20,
   "injectable": false,
@@ -2670,6 +3023,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -2677,6 +3031,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -2684,6 +3039,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.005,
     "unit": "kg",
@@ -2691,6 +3047,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.01,
     "unit": "",
@@ -2707,6 +3064,8 @@
   "zh": "汽水",
   "desc": "汽水 是一种饮料类液体，具有饮料共有的增加口渴值与降低体温的效果，此外还可增加大量情绪值与体重。",
   "full_desc": "汽水 是一种饮料类液体，具有饮料共有的增加口渴值与降低体温的效果，此外还可增加大量情绪值与体重。\n\n汽水独特地可以恢复精力与体力，所带来的咖啡因水平也能带来辅助运动、增加体力恢复的精力充沛状态。尽管饮用会有少量反胃程度负面效果，但在生存中有所帮助。",
+  "desc_en": "Soda is a non-craftable fluid. ",
+  "full_desc_en": "Soda is a non-craftable fluid. \n\nIt is typically used to increase Hydration, Energy and Mood but this comes at the cost of Sickness.",
   "color": "#705E49",
   "valuePerLiter": 16,
   "injectable": false,
@@ -2714,6 +3073,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -2721,6 +3081,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.003,
     "unit": "°C",
@@ -2728,6 +3089,7 @@
    },
    {
     "label": "stamina",
+    "label_en": "stamina",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -2735,6 +3097,7 @@
    },
    {
     "label": "能量",
+    "label_en": "Energy",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -2742,6 +3105,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -2749,6 +3113,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.015,
     "unit": "",
@@ -2756,6 +3121,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.004,
     "unit": "kg",
@@ -2763,6 +3129,7 @@
    },
    {
     "label": "咖啡因",
+    "label_en": "caffeinated",
     "action": "add",
     "value": 0.8,
     "unit": "",
@@ -2781,6 +3148,8 @@
   "zh": "生理盐水",
   "desc": "生理盐水 是一种药品类液体，可注射使用，用于增加血容量，减少血液黏稠度，补充口渴。",
   "full_desc": "生理盐水 是一种药品类液体，可注射使用，用于增加血容量，减少血液黏稠度，补充口渴。",
+  "desc_en": "Saline is a craftable Fluid.",
+  "full_desc_en": "Saline is a craftable Fluid.\n\nIt can be used to treat Blood loss, thick blood and thirst.",
   "color": "#C4C4C4",
   "valuePerLiter": 20,
   "injectable": true,
@@ -2788,6 +3157,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.093333,
     "unit": "",
@@ -2795,6 +3165,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.042667,
     "unit": "",
@@ -2802,6 +3173,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.005333,
     "unit": "",
@@ -2811,6 +3183,7 @@
   "health": [
    {
     "label": "血量",
+    "label_en": "Blood volume",
     "action": "add",
     "value": 0.053333,
     "unit": "",
@@ -2818,6 +3191,7 @@
    },
    {
     "label": "血液黏度",
+    "label_en": "Blood viscosity",
     "action": "subtract",
     "value": 0.066667,
     "unit": "",
@@ -2825,6 +3199,7 @@
    },
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.093333,
     "unit": "",
@@ -2842,6 +3217,8 @@
   "zh": "硝普钠",
   "desc": "硝普钠是一种药品类液体，注射使用以降低血压。可以用于紧急降低血压，或者少量反复给药，以长期维持降低血压。",
   "full_desc": "硝普钠是一种药品类液体，注射使用以降低血压。可以用于紧急降低血压，或者少量反复给药，以长期维持降低血压。",
+  "desc_en": "Sodium nitroprusside is a non-craftable fluid.",
+  "full_desc_en": "Sodium nitroprusside is a non-craftable fluid.\n\nIt lowers Blood pressure when injected.",
   "color": "#CF5829",
   "valuePerLiter": 150,
   "injectable": true,
@@ -2849,6 +3226,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.05,
     "unit": "",
@@ -2858,6 +3236,7 @@
   "health": [
    {
     "label": "bloodPressureChangeFromMedicine",
+    "label_en": "bloodPressureChangeFromMedicine",
     "action": "add",
     "value": 6,
     "unit": "",
@@ -2873,6 +3252,8 @@
   "zh": "肥皂",
   "desc": "肥皂是一种用于降低脏污程度的液体，也可为肢体提供短暂的消毒效果。",
   "full_desc": "肥皂是一种用于降低脏污程度的液体，也可为肢体提供短暂的消毒效果。",
+  "desc_en": "Soap is a craftable fluid.",
+  "full_desc_en": "Soap is a craftable fluid.\n\nIt removes Dirtiness from the character. It can be used to disinfect wounds, but not very well.",
   "color": "#A1FFBA",
   "valuePerLiter": 14,
   "injectable": false,
@@ -2880,6 +3261,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -2887,6 +3269,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.2,
     "unit": "",
@@ -2894,6 +3277,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.02,
     "unit": "",
@@ -2903,6 +3287,7 @@
   "health": [
    {
     "label": "dirtyness",
+    "label_en": "dirtyness",
     "action": "subtract",
     "value": 0.25,
     "unit": "",
@@ -2920,6 +3305,8 @@
   "zh": "运动饮料",
   "desc": "运动饮料 是一种功能性饮料类液体，饮用后可补充口渴，恢复精力与体力，并略微提升情绪值，但也会增加少量反胃。",
   "full_desc": "运动饮料 是一种功能性饮料类液体，饮用后可补充口渴，恢复精力与体力，并略微提升情绪值，但也会增加少量反胃。",
+  "desc_en": "Sports drink is a non-craftable fluid.",
+  "full_desc_en": "Sports drink is a non-craftable fluid.\n\nIt increases Energy and greatly increases Hydration, but gives a small amount of Sickness.",
   "color": "#0A3BFF",
   "valuePerLiter": 20,
   "injectable": false,
@@ -2927,6 +3314,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.13,
     "unit": "",
@@ -2934,6 +3322,7 @@
    },
    {
     "label": "stamina",
+    "label_en": "stamina",
     "action": "add",
     "value": 0.25,
     "unit": "",
@@ -2941,6 +3330,7 @@
    },
    {
     "label": "能量",
+    "label_en": "Energy",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -2948,6 +3338,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.02,
     "unit": "",
@@ -2955,6 +3346,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.005,
     "unit": "",
@@ -2962,6 +3354,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.01,
     "unit": "kg",
@@ -2980,6 +3373,8 @@
   "zh": "链激酶",
   "desc": "链激酶是一种药品类液体，用于降低血液黏稠度，使用后会增加少量反胃。",
   "full_desc": "链激酶是一种药品类液体，用于降低血液黏稠度，使用后会增加少量反胃。",
+  "desc_en": "Streptokinase is a non-craftable fluid.",
+  "full_desc_en": "Streptokinase is a non-craftable fluid.\n\nIt is a blood thinner, typically used to treat pulmonary embolism and reduce blood viscosity.",
   "color": "#427E82",
   "valuePerLiter": 150,
   "injectable": true,
@@ -2987,6 +3382,7 @@
   "drink": [
    {
     "label": "血液黏度",
+    "label_en": "Blood viscosity",
     "action": "subtract",
     "value": 0.749985,
     "unit": "",
@@ -2994,6 +3390,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.299994,
     "unit": "",
@@ -3003,6 +3400,7 @@
   "health": [
    {
     "label": "血液黏度",
+    "label_en": "Blood viscosity",
     "action": "subtract",
     "value": 1.49997,
     "unit": "",
@@ -3010,6 +3408,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.149997,
     "unit": "",
@@ -3025,6 +3424,8 @@
   "zh": "过滤水",
   "desc": "过滤水 是基础的液体，用于安全饮用或合成中消耗。",
   "full_desc": "过滤水 是基础的液体，用于安全饮用或合成中消耗。\n\n作为基础的饮料，饮用增加口渴与降低体温，且注射、涂抹无效果。",
+  "desc_en": "Clean water is a craftable fluid. It can also be found in various fluid containers.",
+  "full_desc_en": "Clean water is a craftable fluid. It can also be found in various fluid containers.\n\nIt is typically used to satisfy thirst.",
   "color": "#75D1FF",
   "valuePerLiter": 14,
   "injectable": false,
@@ -3032,6 +3433,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -3039,6 +3441,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0025,
     "unit": "°C",
@@ -3057,6 +3460,8 @@
   "zh": "伤口粘合胶",
   "desc": "伤口粘合胶是一种外用药品类液体，可减轻外出血与疼痛、恢复皮肤健康度和肌肉健康度，并提供降感染与消毒效果；但使用后会提高血液黏稠度。",
   "full_desc": "伤口粘合胶是一种外用药品类液体，可减轻外出血与疼痛、恢复皮肤健康度和肌肉健康度，并提供降感染与消毒效果；但使用后会提高血液黏稠度。",
+  "desc_en": "Wound glue is a medical fluid container item that spawns with 80mL of Wound glue.",
+  "full_desc_en": "Wound glue is a medical fluid container item that spawns with 80mL of Wound glue.\n\nIt can be used to disinfect wounds and treat bleeding, skin damage, muscle damage, and pain.",
   "color": "#C9C9C9",
   "valuePerLiter": 150,
   "injectable": false,
@@ -3064,6 +3469,7 @@
   "drink": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.1,
     "unit": "",
@@ -3073,6 +3479,7 @@
   "health": [
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.125,
     "unit": "",
@@ -3080,6 +3487,7 @@
    },
    {
     "label": "皮肤治疗",
+    "label_en": "skinHealAmount",
     "action": "add",
     "value": 0.5,
     "unit": "",
@@ -3087,6 +3495,7 @@
    },
    {
     "label": "肌肉健康",
+    "label_en": "Muscle health",
     "action": "add",
     "value": 0.25,
     "unit": "",
@@ -3094,6 +3503,7 @@
    },
    {
     "label": "止血",
+    "label_en": "bandageSlowAmount",
     "action": "add",
     "value": 1.5,
     "unit": "",
@@ -3101,6 +3511,7 @@
    },
    {
     "label": "infectionAmount",
+    "label_en": "infectionAmount",
     "action": "subtract",
     "value": 0.25,
     "unit": "",
@@ -3118,6 +3529,8 @@
   "zh": "柠檬水",
   "desc": "柠檬水 是一种饮料类液体，饮用可补充口渴，并提高情绪值。",
   "full_desc": "柠檬水 是一种饮料类液体，饮用可补充口渴，并提高情绪值。",
+  "desc_en": "Lemonade is a non-craftable fluid. ",
+  "full_desc_en": "Lemonade is a non-craftable fluid. \n\nIt is typically used to increase Hydration and Mood.",
   "color": "#FFDA54",
   "valuePerLiter": 2,
   "injectable": false,
@@ -3125,6 +3538,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.07,
     "unit": "",
@@ -3132,6 +3546,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.003,
     "unit": "°C",
@@ -3139,6 +3554,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "subtract",
     "value": 0.025,
     "unit": "",
@@ -3146,6 +3562,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.075,
     "unit": "",
@@ -3164,6 +3581,8 @@
   "zh": "血管加压素",
   "desc": "血管加压素 是一种无法制作的液体，可以饮用或注射来增高血压。",
   "full_desc": "血管加压素 是一种无法制作的液体，可以饮用或注射来增高血压。\n\n饮用产生以下效果：\n• +25% 血压（每 1 mL 增加 0.5 秒时长）\n\n注射产生以下效果：\n• +25% 血压（每 1 mL 增加 6 秒时长）",
+  "desc_en": "Vasopressin is a non-craftable fluid. It raises Blood pressure when injected or ingested.",
+  "full_desc_en": "Vasopressin is a non-craftable fluid. It raises Blood pressure when injected or ingested.",
   "color": "#FFFFFF",
   "valuePerLiter": 150,
   "injectable": true,
@@ -3171,6 +3590,7 @@
   "drink": [
    {
     "label": "bloodPressureChangeFromMedicine",
+    "label_en": "bloodPressureChangeFromMedicine",
     "action": "subtract",
     "value": 0.5,
     "unit": "",
@@ -3180,6 +3600,7 @@
   "health": [
    {
     "label": "bloodPressureChangeFromMedicine",
+    "label_en": "bloodPressureChangeFromMedicine",
     "action": "subtract",
     "value": 6,
     "unit": "",
@@ -3195,6 +3616,8 @@
   "zh": "酸奶",
   "desc": "酸奶 是一种食物类液体，它既能补充口渴和饥饿，提升情绪值并降低体温，但会增加微量反胃。",
   "full_desc": "酸奶 是一种食物类液体，它既能补充口渴和饥饿，提升情绪值并降低体温，但会增加微量反胃。",
+  "desc_en": "Yogurt is a non-craftable fluid.",
+  "full_desc_en": "Yogurt is a non-craftable fluid.\n\nIt is typically eaten as a decent source of Satiation",
   "color": "#D5EBF0",
   "valuePerLiter": 26,
   "injectable": false,
@@ -3202,6 +3625,7 @@
   "drink": [
    {
     "label": "口渴值",
+    "label_en": "Thirst",
     "action": "add",
     "value": 0.04,
     "unit": "",
@@ -3209,6 +3633,7 @@
    },
    {
     "label": "饥饿值",
+    "label_en": "Hunger",
     "action": "add",
     "value": 0.09,
     "unit": "",
@@ -3216,6 +3641,7 @@
    },
    {
     "label": "体重",
+    "label_en": "weightOffset",
     "action": "add",
     "value": 0.004,
     "unit": "kg",
@@ -3223,6 +3649,7 @@
    },
    {
     "label": "反胃程度",
+    "label_en": "Sickness",
     "action": "add",
     "value": 0.01,
     "unit": "",
@@ -3230,6 +3657,7 @@
    },
    {
     "label": "情绪值",
+    "label_en": "Mood",
     "action": "add",
     "value": 0.002,
     "unit": "",
@@ -3237,6 +3665,7 @@
    },
    {
     "label": "体温",
+    "label_en": "Temperature",
     "action": "subtract",
     "value": 0.0015,
     "unit": "°C",
